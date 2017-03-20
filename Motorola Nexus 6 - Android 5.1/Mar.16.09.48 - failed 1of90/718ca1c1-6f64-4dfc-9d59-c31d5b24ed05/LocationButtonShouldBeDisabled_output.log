@@ -1,0 +1,2058 @@
+NUnit-Console version 2.6.3.13283
+Copyright (C) 2002-2012 Charlie Poole.
+Copyright (C) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov.
+Copyright (C) 2000-2002 Philip Craig.
+All Rights Reserved.
+
+Runtime Environment - 
+   OS Version: Unix 15.3.0.0
+  CLR Version: 4.0.30319.17020 ( Mono 4.0 ( 4.2.3 (explicit/832de4b Thu Mar  3 19:24:57 EST 2016) ) )
+
+ProcessModel: Default    DomainUsage: Single
+Execution Runtime: mono-4.0
+Installing test cloud reporter.
+Connected to Xamarin.UITest.
+Run list: runlist.txt
+Included categories: AppStartTests,MustTest
+.17-03-2017 02:58:37.866 +01:00 - 0 - Full log file: /Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/tmp/uitest/log-2017-03-17_02-58-37-860.txt
+17-03-2017 02:58:37.913 +01:00 - 47 - Potential Android SDK location: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk - Valid SDK. [ Source: ANDROID_HOME ]
+17-03-2017 02:58:37.959 +01:00 - 93 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-mac_x86 - Does not exist. [ Source: Xamarin < 3 install path ]
+17-03-2017 02:58:37.959 +01:00 - 93 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-macosx - Does not exist. [ Source: Xamarin 3 install path ]
+17-03-2017 02:58:37.959 +01:00 - 93 - Potential Android SDK location: /usr/local/Cellar/android-sdk/ - Does not exist. [ Source: Homebrew install path ]
+17-03-2017 02:58:37.960 +01:00 - 93 - Using Android SDK: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk
+17-03-2017 02:58:37.965 +01:00 - 98 - Using JDK: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home [ Source: JAVA_HOME ]
+17-03-2017 02:58:38.002 +01:00 - 136 - Finished with exit code 0 in 30 ms.
+N: android=http://schemas.android.com/apk/res/android
+  E: manifest (line=2)
+    A: android:versionCode(0x0101021b)=(type 0x10)0x753b
+    A: android:versionName(0x0101021c)="3.1.7" (Raw: "3.1.7")
+    A: android:installLocation(0x010102b7)=(type 0x10)0x2
+    A: package="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    A: platformBuildVersionCode=(type 0x10)0x17 (Raw: "23")
+    A: platformBuildVersionName="6.0-2704002" (Raw: "6.0-2704002")
+    E: uses-sdk (line=4)
+      A: android:minSdkVersion(0x0101020c)=(type 0x10)0x10
+    E: uses-permission (line=5)
+      A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+    E: uses-permission (line=6)
+      A: android:name(0x01010003)="android.permission.ACCESS_NETWORK_STATE" (Raw: "android.permission.ACCESS_NETWORK_STATE")
+    E: uses-permission (line=7)
+      A: android:name(0x01010003)="android.permission.WRITE_EXTERNAL_STORAGE" (Raw: "android.permission.WRITE_EXTERNAL_STORAGE")
+    E: uses-permission (line=8)
+      A: android:name(0x01010003)="android.permission.READ_EXTERNAL_STORAGE" (Raw: "android.permission.READ_EXTERNAL_STORAGE")
+    E: uses-permission (line=9)
+      A: android:name(0x01010003)="android.permission.ACCESS_COARSE_LOCATION" (Raw: "android.permission.ACCESS_COARSE_LOCATION")
+    E: uses-permission (line=10)
+      A: android:name(0x01010003)="android.permission.ACCESS_FINE_LOCATION" (Raw: "android.permission.ACCESS_FINE_LOCATION")
+    E: uses-permission (line=11)
+      A: android:name(0x01010003)="android.permission.ACCESS_WIFI_STATE" (Raw: "android.permission.ACCESS_WIFI_STATE")
+    E: uses-permission (line=12)
+      A: android:name(0x01010003)="android.permission.MANAGE_DOCUMENTS" (Raw: "android.permission.MANAGE_DOCUMENTS")
+    E: uses-permission (line=13)
+      A: android:name(0x01010003)="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" (Raw: "android.permission.MOUNT_UNMOUNT_FILESYSTEMS")
+    E: uses-feature (line=14)
+      A: android:name(0x01010003)="android.hardware.location" (Raw: "android.hardware.location")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: uses-feature (line=15)
+      A: android:name(0x01010003)="android.hardware.location.gps" (Raw: "android.hardware.location.gps")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: uses-feature (line=16)
+      A: android:name(0x01010003)="android.hardware.location.network" (Raw: "android.hardware.location.network")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: application (line=17)
+      A: android:theme(0x01010000)=@0x7f0601f3
+      A: android:label(0x01010001)=@0x7f0b0082
+      A: android:icon(0x01010002)=@0x7f0200a2
+      A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.MainApplication" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.MainApplication")
+      A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+      A: android:allowBackup(0x01010280)=(type 0x12)0xffffffff
+      E: receiver (line=18)
+        A: android:name(0x01010003)="com.appsflyer.MultipleInstallBroadcastReceiver" (Raw: "com.appsflyer.MultipleInstallBroadcastReceiver")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        E: intent-filter (line=19)
+          E: action (line=20)
+            A: android:name(0x01010003)="com.android.vending.INSTALL_REFERRER" (Raw: "com.android.vending.INSTALL_REFERRER")
+      E: activity (line=23)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: meta-data (line=24)
+        A: android:name(0x01010003)="net.hockeyapp.android.appIdentifier" (Raw: "net.hockeyapp.android.appIdentifier")
+        A: android:value(0x01010024)="1dc8cf0ddfb2d9821adeb7470f0e0468" (Raw: "1dc8cf0ddfb2d9821adeb7470f0e0468")
+      E: meta-data (line=25)
+        A: android:name(0x01010003)="com.google.android.gms.version" (Raw: "com.google.android.gms.version")
+        A: android:value(0x01010024)=@0x7f090007
+      E: activity (line=26)
+        A: android:label(0x01010001)="Apply" (Raw: "Apply")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ApplyActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ApplyActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=27)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ExpiredJobActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ExpiredJobActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=28)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ExternalApplyActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ExternalApplyActivity")
+      E: activity (line=29)
+        A: android:label(0x01010001)="Job Details" (Raw: "Job Details")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.JobDisplayPageActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.JobDisplayPageActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=30)
+        A: android:theme(0x01010000)=@0x7f0601f7
+        A: android:icon(0x01010002)=@0x7f0200a2
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity")
+        E: intent-filter (line=31)
+          E: action (line=32)
+            A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+          E: category (line=33)
+            A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+      E: activity (line=36)
+        A: android:label(0x01010001)="Similar Jobs" (Raw: "Similar Jobs")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.RecommendationsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.RecommendationsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=37)
+        A: android:theme(0x01010000)=@0x7f06020c
+        A: android:label(0x01010001)="ValuePropActivity" (Raw: "ValuePropActivity")
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.ValuePropActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.ValuePropActivity")
+      E: activity (line=38)
+        A: android:label(0x01010001)="Login" (Raw: "Login")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.LoginActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.LoginActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=39)
+        A: android:theme(0x01010000)=@0x7f0601f5
+        A: android:label(0x01010001)="OnboardingActivity" (Raw: "OnboardingActivity")
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.OnboardingActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.OnboardingActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+        A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x20
+      E: activity (line=40)
+        A: android:label(0x01010001)="My CareerBuilder" (Raw: "My CareerBuilder")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.MasterNavActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.MasterNavActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=41)
+        A: android:label(0x01010001)="Settings" (Raw: "Settings")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.SettingsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.SettingsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=42)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.AboutUsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.AboutUsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=43)
+        A: android:theme(0x01010000)=@0x7f06020c
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.TermsAndConditionsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.TermsAndConditionsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: receiver (line=44)
+        A: android:name(0x01010003)="md5d8b6997ad22c9e0e4a03cc42d04527c5.RefreshOAuthBroadcastReceiver" (Raw: "md5d8b6997ad22c9e0e4a03cc42d04527c5.RefreshOAuthBroadcastReceiver")
+        A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+      E: activity (line=45)
+        A: android:label(0x01010001)="Resume Details" (Raw: "Resume Details")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ResumeDetailActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ResumeDetailActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=46)
+        A: android:label(0x01010001)="Help" (Raw: "Help")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.HelpActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.HelpActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=47)
+        A: android:label(0x01010001)="Resume Views" (Raw: "Resume Views")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ResumeViewsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ResumeViewsActivity")
+      E: receiver (line=48)
+        A: android:label(0x01010001)="Connectivity Plugin Broadcast Receiver" (Raw: "Connectivity Plugin Broadcast Receiver")
+        A: android:name(0x01010003)="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" (Raw: "md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver")
+        A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+      E: provider (line=49)
+        A: android:name(0x01010003)="mono.MonoRuntimeProvider" (Raw: "mono.MonoRuntimeProvider")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:authorities(0x01010018)="com.careerbuilder.SugarDrone.mono.MonoRuntimeProvider.__mono_init__" (Raw: "com.careerbuilder.SugarDrone.mono.MonoRuntimeProvider.__mono_init__")
+        A: android:initOrder(0x0101001a)=(type 0x10)0x7fffffff
+      E: receiver (line=51)
+        A: android:name(0x01010003)="mono.android.Seppuku" (Raw: "mono.android.Seppuku")
+        E: intent-filter (line=52)
+          E: action (line=53)
+            A: android:name(0x01010003)="mono.android.intent.action.SEPPUKU" (Raw: "mono.android.intent.action.SEPPUKU")
+          E: category (line=54)
+            A: android:name(0x01010003)="mono.android.intent.category.SEPPUKU.com.careerbuilder.SugarDrone" (Raw: "mono.android.intent.category.SEPPUKU.com.careerbuilder.SugarDrone")
+      E: activity (line=57)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: activity (line=58)
+        A: android:name(0x01010003)="net.hockeyapp.android.FeedbackActivity" (Raw: "net.hockeyapp.android.FeedbackActivity")
+      E: activity (line=59)
+        A: android:name(0x01010003)="net.hockeyapp.android.PaintActivity" (Raw: "net.hockeyapp.android.PaintActivity")
+      E: activity (line=60)
+        A: android:name(0x01010003)="net.hockeyapp.android.LoginActivity" (Raw: "net.hockeyapp.android.LoginActivity")
+      E: activity (line=61)
+        A: android:name(0x01010003)="net.hockeyapp.android.ExpiryInfoActivity" (Raw: "net.hockeyapp.android.ExpiryInfoActivity")
+      E: activity (line=62)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: activity (line=63)
+        A: android:name(0x01010003)="net.hockeyapp.android.FeedbackActivity" (Raw: "net.hockeyapp.android.FeedbackActivity")
+      E: activity (line=64)
+        A: android:name(0x01010003)="net.hockeyapp.android.PaintActivity" (Raw: "net.hockeyapp.android.PaintActivity")
+      E: activity (line=65)
+        A: android:name(0x01010003)="net.hockeyapp.android.LoginActivity" (Raw: "net.hockeyapp.android.LoginActivity")
+      E: activity (line=66)
+        A: android:name(0x01010003)="net.hockeyapp.android.ExpiryInfoActivity" (Raw: "net.hockeyapp.android.ExpiryInfoActivity")
+
+17-03-2017 02:58:38.025 +01:00 - 159 - Android test running Xamarin.UITest version: 1.3.15
+17-03-2017 02:58:38.053 +01:00 - 187 - Using XAMARIN_TEST_CLOUD configuration override.
+17-03-2017 02:58:38.911 +01:00 - 1045 - Artifact folder: /Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/tmp/uitest/a-39C1A136CBF977A889616D44AD6AD1809F00F7FD
+17-03-2017 02:58:38.911 +01:00 - 1045 - Initializing Android app with apk: /Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/app.apk
+17-03-2017 02:58:38.938 +01:00 - 1072 - Finished with exit code 0 in 22 ms.
+Verifying alignment of /Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/app.apk (4)...
+      50 META-INF/MANIFEST.MF (OK - compressed)
+   30481 META-INF/ANDROIDD.SF (OK - compressed)
+   61123 META-INF/ANDROIDD.RSA (OK - compressed)
+   62272 AndroidManifest.xml (OK - compressed)
+   65239 res/anim-v21/design_bottom_sheet_slide_in.xml (OK - compressed)
+   65636 res/anim-v21/design_bottom_sheet_slide_out.xml (OK - compressed)
+   66009 res/anim/abc_fade_in.xml (OK - compressed)
+   66299 res/anim/abc_fade_out.xml (OK - compressed)
+   66606 res/anim/abc_grow_fade_in_from_bottom.xml (OK - compressed)
+   67065 res/anim/abc_popup_enter.xml (OK - compressed)
+   67401 res/anim/abc_popup_exit.xml (OK - compressed)
+   67756 res/anim/abc_shrink_fade_out_from_bottom.xml (OK - compressed)
+   68218 res/anim/abc_slide_in_bottom.xml (OK - compressed)
+   68519 res/anim/abc_slide_in_top.xml (OK - compressed)
+   68824 res/anim/abc_slide_out_bottom.xml (OK - compressed)
+   69125 res/anim/abc_slide_out_top.xml (OK - compressed)
+   69425 res/anim/animation_enter.xml (OK - compressed)
+   69765 res/anim/animation_leave.xml (OK - compressed)
+   70120 res/anim/design_bottom_sheet_slide_in.xml (OK - compressed)
+   70512 res/anim/design_bottom_sheet_slide_out.xml (OK - compressed)
+   70887 res/anim/design_fab_in.xml (OK - compressed)
+   71274 res/anim/design_fab_out.xml (OK - compressed)
+   71668 res/anim/design_snackbar_in.xml (OK - compressed)
+   71932 res/anim/design_snackbar_out.xml (OK - compressed)
+   72189 res/anim/fab_scale_down.xml (OK - compressed)
+   72537 res/anim/fab_scale_up.xml (OK - compressed)
+   72895 res/anim/fab_slide_in_from_left.xml (OK - compressed)
+   73283 res/anim/fab_slide_in_from_right.xml (OK - compressed)
+   73667 res/anim/fab_slide_out_to_left.xml (OK - compressed)
+   74055 res/anim/fab_slide_out_to_right.xml (OK - compressed)
+   74472 res/color-v11/abc_background_cache_hint_selector_material_dark.xml (OK - compressed)
+   74817 res/color-v11/abc_background_cache_hint_selector_material_light.xml (OK - compressed)
+   75141 res/color-v23/abc_color_highlight_material.xml (OK - compressed)
+   75511 res/color/abc_background_cache_hint_selector_material_dark.xml (OK - compressed)
+   75803 res/color/abc_background_cache_hint_selector_material_light.xml (OK - compressed)
+   76089 res/color/abc_primary_text_disable_only_material_dark.xml (OK - compressed)
+   76422 res/color/abc_primary_text_disable_only_material_light.xml (OK - compressed)
+   76741 res/color/abc_primary_text_material_dark.xml (OK - compressed)
+   77061 res/color/abc_primary_text_material_light.xml (OK - compressed)
+   77370 res/color/abc_search_url_text.xml (OK - compressed)
+   77717 res/color/abc_secondary_text_material_dark.xml (OK - compressed)
+   78040 res/color/abc_secondary_text_material_light.xml (OK - compressed)
+   78364 res/color/common_google_signin_btn_text_dark.xml (OK - compressed)
+   78741 res/color/common_google_signin_btn_text_light.xml (OK - compressed)
+   79115 res/color/common_plus_signin_btn_text_dark.xml (OK - compressed)
+   79490 res/color/common_plus_signin_btn_text_light.xml (OK - compressed)
+   79849 res/color/filter_button_text.xml (OK - compressed)
+   80162 res/color/switch_thumb_material_dark.xml (OK - compressed)
+   80479 res/color/switch_thumb_material_light.xml (OK - compressed)
+   80812 res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png (OK)
+   81184 res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png (OK)
+   81572 res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png (OK)
+   82204 res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png (OK)
+   82908 res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png (OK)
+   83752 res/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png (OK)
+   85428 res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png (OK)
+   86572 res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png (OK)
+   88208 res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png (OK)
+   90048 res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png (OK)
+   90360 res/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+   90828 res/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png (OK)
+   91200 res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png (OK)
+   91512 res/drawable-hdpi-v4/abc_ic_go_search_api_mtrl_alpha.png (OK)
+   91744 res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+   92108 res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png (OK)
+   92784 res/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png (OK)
+   93060 res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png (OK)
+   93508 res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png (OK)
+   93860 res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png (OK)
+   94736 res/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png (OK)
+   95392 res/drawable-hdpi-v4/abc_ic_star_black_16dp.png (OK)
+   95964 res/drawable-hdpi-v4/abc_ic_star_black_36dp.png (OK)
+   97020 res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png (OK)
+   97452 res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png (OK)
+   98164 res/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png (OK)
+   98788 res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png (OK)
+   99036 res/drawable-hdpi-v4/abc_list_focused_holo.9.png (OK)
+   99364 res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png (OK)
+   99660 res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png (OK)
+   99956 res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png (OK)
+  100264 res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png (OK)
+  100600 res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png (OK)
+  100932 res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png (OK)
+  101836 res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png (OK)
+  103184 res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png (OK)
+  103536 res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png (OK)
+  103904 res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png (OK)
+  104380 res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png (OK)
+  104680 res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png (OK)
+  104964 res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png (OK)
+  105416 res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png (OK)
+  106040 res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png (OK)
+  106332 res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png (OK)
+  106616 res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png (OK)
+  106912 res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png (OK)
+  107192 res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png (OK)
+  107444 res/drawable-hdpi-v4/cb_all_accounts.png (OK)
+  237004 res/drawable-hdpi-v4/close.png (OK)
+  237284 res/drawable-hdpi-v4/cloud_resume.png (OK)
+  247924 res/drawable-hdpi-v4/common_full_open_on_phone.png (OK)
+  248508 res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png (OK)
+  249844 res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_focused.9.png (OK)
+  251892 res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png (OK)
+  253852 res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png (OK)
+  255788 res/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png (OK)
+  256872 res/drawable-hdpi-v4/common_google_signin_btn_icon_light_focused.9.png (OK)
+  259024 res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png (OK)
+  260928 res/drawable-hdpi-v4/common_google_signin_btn_icon_light_pressed.9.png (OK)
+  262796 res/drawable-hdpi-v4/common_google_signin_btn_text_dark_disabled.9.png (OK)
+  264196 res/drawable-hdpi-v4/common_google_signin_btn_text_dark_focused.9.png (OK)
+  266336 res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png (OK)
+  268412 res/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png (OK)
+  270468 res/drawable-hdpi-v4/common_google_signin_btn_text_light_disabled.9.png (OK)
+  271620 res/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png (OK)
+  273836 res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png (OK)
+  275852 res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png (OK)
+  277816 res/drawable-hdpi-v4/common_ic_googleplayservices.png (OK)
+  282740 res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png (OK)
+  283992 res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png (OK)
+  285688 res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png (OK)
+  287320 res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png (OK)
+  288968 res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png (OK)
+  290020 res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_focused.9.png (OK)
+  291872 res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_normal.9.png (OK)
+  293512 res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png (OK)
+  295136 res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png (OK)
+  296456 res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_focused.9.png (OK)
+  298260 res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_normal.9.png (OK)
+  299968 res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png (OK)
+  301756 res/drawable-hdpi-v4/common_plus_signin_btn_text_light_disabled.9.png (OK)
+  302844 res/drawable-hdpi-v4/common_plus_signin_btn_text_light_focused.9.png (OK)
+  304788 res/drawable-hdpi-v4/common_plus_signin_btn_text_light_normal.9.png (OK)
+  306504 res/drawable-hdpi-v4/common_plus_signin_btn_text_light_pressed.9.png (OK)
+  308164 res/drawable-hdpi-v4/complete.png (OK)
+  324236 res/drawable-hdpi-v4/delete.png (OK)
+  324516 res/drawable-hdpi-v4/dropdown_arrow.png (OK)
+  324728 res/drawable-hdpi-v4/empty_my_jobs.png (OK)
+  364888 res/drawable-hdpi-v4/eye.png (OK)
+  365396 res/drawable-hdpi-v4/fab_add.png (OK)
+  365624 res/drawable-hdpi-v4/file_document.png (OK)
+  366124 res/drawable-hdpi-v4/ic_arrow_back_white_24dp.png (OK)
+  366404 res/drawable-hdpi-v4/ic_map_blue_24_dp.png (OK)
+  367364 res/drawable-hdpi-v4/ic_map_white_24dp.png (OK)
+  368036 res/drawable-hdpi-v4/ic_my_location_black_24dp.png (OK)
+  368940 res/drawable-hdpi-v4/ic_my_location_white_24dp.png (OK)
+  369840 res/drawable-hdpi-v4/ic_near_me_black_24dp.png (OK)
+  370532 res/drawable-hdpi-v4/ic_near_me_white_24dp.png (OK)
+  371224 res/drawable-hdpi-v4/ic_search_white_24dp.png (OK)
+  371880 res/drawable-hdpi-v4/ic_share_white_24dp.png (OK)
+  372720 res/drawable-hdpi-v4/ic_star_border_white_24dp.png (OK)
+  373792 res/drawable-hdpi-v4/ic_star_outline.png (OK)
+  374904 res/drawable-hdpi-v4/icon.png (OK)
+  379584 res/drawable-hdpi-v4/job_matches.png (OK)
+  404588 res/drawable-hdpi-v4/job_search.png (OK)
+  417216 res/drawable-hdpi-v4/location.png (OK)
+  417612 res/drawable-hdpi-v4/logo_tagline.png (OK)
+  430900 res/drawable-hdpi-v4/menu_saved_star.png (OK)
+  431992 res/drawable-hdpi-v4/menu_share.png (OK)
+  432628 res/drawable-hdpi-v4/no_jobs_found.png (OK)
+  449172 res/drawable-hdpi-v4/no_resume_image.png (OK)
+  462316 res/drawable-hdpi-v4/quick_apply.png (OK)
+  474244 res/drawable-hdpi-v4/resume_icon.png (OK)
+  478744 res/drawable-hdpi-v4/resume_value_prop.png (OK)
+  495064 res/drawable-hdpi-v4/saved_star.png (OK)
+  495808 res/drawable-hdpi-v4/search.png (OK)
+  496960 res/drawable-hdpi-v4/share.png (OK)
+  497684 res/drawable-hdpi-v4/upload.png (OK)
+  514692 res/drawable-ldpi-v4/ic_star_outline.png (OK)
+  515316 res/drawable-ldpi-v4/menu_share.png (OK)
+  515724 res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  516200 res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  516568 res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  517244 res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png (OK)
+  517704 res/drawable-ldrtl-mdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  518120 res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  518384 res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  518856 res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png (OK)
+  519292 res/drawable-ldrtl-xhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  519812 res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  520140 res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  520920 res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png (OK)
+  521496 res/drawable-ldrtl-xxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  522064 res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  522500 res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  523524 res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png (OK)
+  524212 res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  524552 res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  525044 res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  526316 res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png (OK)
+  526920 res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png (OK)
+  527280 res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png (OK)
+  527652 res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png (OK)
+  528164 res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png (OK)
+  528676 res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png (OK)
+  529260 res/drawable-mdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png (OK)
+  530680 res/drawable-mdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png (OK)
+  531752 res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png (OK)
+  532888 res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png (OK)
+  534104 res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png (OK)
+  534412 res/drawable-mdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  534816 res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png (OK)
+  535144 res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png (OK)
+  535492 res/drawable-mdpi-v4/abc_ic_go_search_api_mtrl_alpha.png (OK)
+  535728 res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  535988 res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  536456 res/drawable-mdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png (OK)
+  536700 res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png (OK)
+  537020 res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png (OK)
+  537288 res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png (OK)
+  537916 res/drawable-mdpi-v4/abc_ic_search_api_mtrl_alpha.png (OK)
+  538384 res/drawable-mdpi-v4/abc_ic_star_black_16dp.png (OK)
+  538820 res/drawable-mdpi-v4/abc_ic_star_black_36dp.png (OK)
+  539612 res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png (OK)
+  539948 res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png (OK)
+  540512 res/drawable-mdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png (OK)
+  541000 res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png (OK)
+  541248 res/drawable-mdpi-v4/abc_list_focused_holo.9.png (OK)
+  541552 res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png (OK)
+  541848 res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png (OK)
+  542144 res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png (OK)
+  542448 res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png (OK)
+  542768 res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png (OK)
+  543084 res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png (OK)
+  543760 res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png (OK)
+  544700 res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png (OK)
+  545008 res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png (OK)
+  545308 res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png (OK)
+  545676 res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png (OK)
+  545972 res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png (OK)
+  546252 res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png (OK)
+  546676 res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png (OK)
+  547192 res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png (OK)
+  547476 res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png (OK)
+  547752 res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png (OK)
+  548036 res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png (OK)
+  548316 res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png (OK)
+  548568 res/drawable-mdpi-v4/cb_all_accounts.png (OK)
+  611300 res/drawable-mdpi-v4/close.png (OK)
+  611536 res/drawable-mdpi-v4/cloud_resume.png (OK)
+  618436 res/drawable-mdpi-v4/common_full_open_on_phone.png (OK)
+  619248 res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png (OK)
+  620232 res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_focused.9.png (OK)
+  621628 res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal.9.png (OK)
+  622972 res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png (OK)
+  624296 res/drawable-mdpi-v4/common_google_signin_btn_icon_light_disabled.9.png (OK)
+  625112 res/drawable-mdpi-v4/common_google_signin_btn_icon_light_focused.9.png (OK)
+  626588 res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal.9.png (OK)
+  627884 res/drawable-mdpi-v4/common_google_signin_btn_icon_light_pressed.9.png (OK)
+  629160 res/drawable-mdpi-v4/common_google_signin_btn_text_dark_disabled.9.png (OK)
+  630148 res/drawable-mdpi-v4/common_google_signin_btn_text_dark_focused.9.png (OK)
+  631576 res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal.9.png (OK)
+  632948 res/drawable-mdpi-v4/common_google_signin_btn_text_dark_pressed.9.png (OK)
+  634304 res/drawable-mdpi-v4/common_google_signin_btn_text_light_disabled.9.png (OK)
+  635136 res/drawable-mdpi-v4/common_google_signin_btn_text_light_focused.9.png (OK)
+  636632 res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal.9.png (OK)
+  637924 res/drawable-mdpi-v4/common_google_signin_btn_text_light_pressed.9.png (OK)
+  639212 res/drawable-mdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png (OK)
+  640104 res/drawable-mdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png (OK)
+  641308 res/drawable-mdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png (OK)
+  642432 res/drawable-mdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png (OK)
+  643564 res/drawable-mdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png (OK)
+  644344 res/drawable-mdpi-v4/common_plus_signin_btn_icon_light_focused.9.png (OK)
+  645636 res/drawable-mdpi-v4/common_plus_signin_btn_icon_light_normal.9.png (OK)
+  646736 res/drawable-mdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png (OK)
+  647828 res/drawable-mdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png (OK)
+  648712 res/drawable-mdpi-v4/common_plus_signin_btn_text_dark_focused.9.png (OK)
+  649912 res/drawable-mdpi-v4/common_plus_signin_btn_text_dark_normal.9.png (OK)
+  651044 res/drawable-mdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png (OK)
+  652180 res/drawable-mdpi-v4/common_plus_signin_btn_text_light_disabled.9.png (OK)
+  652960 res/drawable-mdpi-v4/common_plus_signin_btn_text_light_focused.9.png (OK)
+  654264 res/drawable-mdpi-v4/common_plus_signin_btn_text_light_normal.9.png (OK)
+  655360 res/drawable-mdpi-v4/common_plus_signin_btn_text_light_pressed.9.png (OK)
+  656420 res/drawable-mdpi-v4/complete.png (OK)
+  666492 res/drawable-mdpi-v4/delete.png (OK)
+  666720 res/drawable-mdpi-v4/dropdown_arrow.png (OK)
+  666916 res/drawable-mdpi-v4/empty_my_jobs.png (OK)
+  687664 res/drawable-mdpi-v4/eye.png (OK)
+  687976 res/drawable-mdpi-v4/fab_add.png (OK)
+  688160 res/drawable-mdpi-v4/file_document.png (OK)
+  688500 res/drawable-mdpi-v4/ic_arrow_back_white_24dp.png (OK)
+  688752 res/drawable-mdpi-v4/ic_map_blue_24_dp.png (OK)
+  689220 res/drawable-mdpi-v4/ic_map_white_24dp.png (OK)
+  689700 res/drawable-mdpi-v4/ic_my_location_black_24dp.png (OK)
+  690324 res/drawable-mdpi-v4/ic_my_location_white_24dp.png (OK)
+  690944 res/drawable-mdpi-v4/ic_near_me_black_24dp.png (OK)
+  691472 res/drawable-mdpi-v4/ic_near_me_white_24dp.png (OK)
+  692000 res/drawable-mdpi-v4/ic_search_white_24dp.png (OK)
+  692464 res/drawable-mdpi-v4/ic_share_white_24dp.png (OK)
+  693056 res/drawable-mdpi-v4/ic_star_border_white_24dp.png (OK)
+  693808 res/drawable-mdpi-v4/ic_star_outline.png (OK)
+  694596 res/drawable-mdpi-v4/icon.png (OK)
+  697128 res/drawable-mdpi-v4/job_matches.png (OK)
+  711660 res/drawable-mdpi-v4/job_search.png (OK)
+  719816 res/drawable-mdpi-v4/location.png (OK)
+  720128 res/drawable-mdpi-v4/logo_tagline.png (OK)
+  728208 res/drawable-mdpi-v4/menu_saved_star.png (OK)
+  729020 res/drawable-mdpi-v4/menu_share.png (OK)
+  729628 res/drawable-mdpi-v4/no_jobs_found.png (OK)
+  746172 res/drawable-mdpi-v4/no_resume_image.png (OK)
+  754944 res/drawable-mdpi-v4/quick_apply.png (OK)
+  757352 res/drawable-mdpi-v4/resume_icon.png (OK)
+  759936 res/drawable-mdpi-v4/resume_value_prop.png (OK)
+  770740 res/drawable-mdpi-v4/saved_star.png (OK)
+  771272 res/drawable-mdpi-v4/search.png (OK)
+  771612 res/drawable-mdpi-v4/share.png (OK)
+  772004 res/drawable-mdpi-v4/upload.png (OK)
+  782468 res/drawable-tvdpi-v4/common_full_open_on_phone.png (OK)
+  783052 res/drawable-tvdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png (OK)
+  784388 res/drawable-tvdpi-v4/common_google_signin_btn_icon_dark_focused.9.png (OK)
+  786316 res/drawable-tvdpi-v4/common_google_signin_btn_icon_dark_normal.9.png (OK)
+  788160 res/drawable-tvdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png (OK)
+  789980 res/drawable-tvdpi-v4/common_google_signin_btn_icon_light_disabled.9.png (OK)
+  791012 res/drawable-tvdpi-v4/common_google_signin_btn_icon_light_focused.9.png (OK)
+  792908 res/drawable-tvdpi-v4/common_google_signin_btn_icon_light_normal.9.png (OK)
+  794684 res/drawable-tvdpi-v4/common_google_signin_btn_icon_light_pressed.9.png (OK)
+  796440 res/drawable-tvdpi-v4/common_google_signin_btn_text_dark_disabled.9.png (OK)
+  797824 res/drawable-tvdpi-v4/common_google_signin_btn_text_dark_focused.9.png (OK)
+  799864 res/drawable-tvdpi-v4/common_google_signin_btn_text_dark_normal.9.png (OK)
+  801788 res/drawable-tvdpi-v4/common_google_signin_btn_text_dark_pressed.9.png (OK)
+  803696 res/drawable-tvdpi-v4/common_google_signin_btn_text_light_disabled.9.png (OK)
+  804772 res/drawable-tvdpi-v4/common_google_signin_btn_text_light_focused.9.png (OK)
+  806860 res/drawable-tvdpi-v4/common_google_signin_btn_text_light_normal.9.png (OK)
+  808704 res/drawable-tvdpi-v4/common_google_signin_btn_text_light_pressed.9.png (OK)
+  810524 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png (OK)
+  811836 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png (OK)
+  813640 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png (OK)
+  815348 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png (OK)
+  817068 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png (OK)
+  818104 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_light_focused.9.png (OK)
+  820016 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_light_normal.9.png (OK)
+  821708 res/drawable-tvdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png (OK)
+  823396 res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png (OK)
+  824748 res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_focused.9.png (OK)
+  826624 res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_normal.9.png (OK)
+  828388 res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png (OK)
+  830196 res/drawable-tvdpi-v4/common_plus_signin_btn_text_light_disabled.9.png (OK)
+  831256 res/drawable-tvdpi-v4/common_plus_signin_btn_text_light_focused.9.png (OK)
+  833256 res/drawable-tvdpi-v4/common_plus_signin_btn_text_light_normal.9.png (OK)
+  835004 res/drawable-tvdpi-v4/common_plus_signin_btn_text_light_pressed.9.png (OK)
+  836734 res/drawable-v21/abc_action_bar_item_background_material.xml (OK - compressed)
+  836997 res/drawable-v21/abc_btn_colored_material.xml (OK - compressed)
+  837681 res/drawable-v21/abc_edit_text_material.xml (OK - compressed)
+  838286 res/drawable-v21/abc_ratingbar_indicator_material.xml (OK - compressed)
+  838680 res/drawable-v21/abc_ratingbar_small_material.xml (OK - compressed)
+  839077 res/drawable-v23/abc_control_background_material.xml (OK - compressed)
+  839376 res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png (OK)
+  839760 res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png (OK)
+  840200 res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png (OK)
+  840840 res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png (OK)
+  841756 res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png (OK)
+  842844 res/drawable-xhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png (OK)
+  845108 res/drawable-xhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png (OK)
+  846720 res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png (OK)
+  849068 res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png (OK)
+  851768 res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png (OK)
+  852088 res/drawable-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+  852592 res/drawable-xhdpi-v4/abc_ic_clear_mtrl_alpha.png (OK)
+  853048 res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png (OK)
+  853460 res/drawable-xhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png (OK)
+  853724 res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+  854044 res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png (OK)
+  854828 res/drawable-xhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png (OK)
+  855132 res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png (OK)
+  855580 res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png (OK)
+  855904 res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png (OK)
+  856908 res/drawable-xhdpi-v4/abc_ic_search_api_mtrl_alpha.png (OK)
+  857720 res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png (OK)
+  858456 res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png (OK)
+  859776 res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png (OK)
+  860292 res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png (OK)
+  861168 res/drawable-xhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png (OK)
+  861972 res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png (OK)
+  862220 res/drawable-xhdpi-v4/abc_list_focused_holo.9.png (OK)
+  862548 res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png (OK)
+  862848 res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png (OK)
+  863148 res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png (OK)
+  863456 res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png (OK)
+  863808 res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png (OK)
+  864152 res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png (OK)
+  865364 res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png (OK)
+  867240 res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png (OK)
+  867680 res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png (OK)
+  868176 res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png (OK)
+  868824 res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png (OK)
+  869132 res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png (OK)
+  869424 res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png (OK)
+  870000 res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png (OK)
+  870828 res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png (OK)
+  871128 res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png (OK)
+  871416 res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png (OK)
+  871712 res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png (OK)
+  872000 res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png (OK)
+  872264 res/drawable-xhdpi-v4/cb_all_accounts.png (OK)
+ 1083348 res/drawable-xhdpi-v4/close.png (OK)
+ 1083636 res/drawable-xhdpi-v4/cloud_resume.png (OK)
+ 1098312 res/drawable-xhdpi-v4/common_full_open_on_phone.png (OK)
+ 1098896 res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png (OK)
+ 1100516 res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png (OK)
+ 1103128 res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png (OK)
+ 1105592 res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png (OK)
+ 1108028 res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png (OK)
+ 1109328 res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_focused.9.png (OK)
+ 1112120 res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal.9.png (OK)
+ 1114444 res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png (OK)
+ 1116780 res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png (OK)
+ 1118512 res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_focused.9.png (OK)
+ 1121244 res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal.9.png (OK)
+ 1123820 res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png (OK)
+ 1126364 res/drawable-xhdpi-v4/common_google_signin_btn_text_light_disabled.9.png (OK)
+ 1127736 res/drawable-xhdpi-v4/common_google_signin_btn_text_light_focused.9.png (OK)
+ 1130636 res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal.9.png (OK)
+ 1133068 res/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png (OK)
+ 1135504 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png (OK)
+ 1136908 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png (OK)
+ 1139036 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png (OK)
+ 1141012 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png (OK)
+ 1142992 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png (OK)
+ 1144148 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png (OK)
+ 1146500 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png (OK)
+ 1148412 res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png (OK)
+ 1150328 res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png (OK)
+ 1151812 res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png (OK)
+ 1154048 res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_normal.9.png (OK)
+ 1156116 res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png (OK)
+ 1158172 res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png (OK)
+ 1159396 res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png (OK)
+ 1161832 res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_normal.9.png (OK)
+ 1163800 res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_pressed.9.png (OK)
+ 1165768 res/drawable-xhdpi-v4/complete.png (OK)
+ 1188068 res/drawable-xhdpi-v4/delete.png (OK)
+ 1188360 res/drawable-xhdpi-v4/dropdown_arrow.png (OK)
+ 1188572 res/drawable-xhdpi-v4/empty_my_jobs.png (OK)
+ 1241840 res/drawable-xhdpi-v4/eye.png (OK)
+ 1242296 res/drawable-xhdpi-v4/fab_add.png (OK)
+ 1242492 res/drawable-xhdpi-v4/file_document.png (OK)
+ 1242976 res/drawable-xhdpi-v4/ic_arrow_back_white_24dp.png (OK)
+ 1243220 res/drawable-xhdpi-v4/ic_map_blue_24_dp.png (OK)
+ 1244524 res/drawable-xhdpi-v4/ic_map_white_24dp.png (OK)
+ 1245308 res/drawable-xhdpi-v4/ic_my_location_black_24dp.png (OK)
+ 1246384 res/drawable-xhdpi-v4/ic_my_location_white_24dp.png (OK)
+ 1247456 res/drawable-xhdpi-v4/ic_near_me_black_24dp.png (OK)
+ 1248352 res/drawable-xhdpi-v4/ic_near_me_white_24dp.png (OK)
+ 1249244 res/drawable-xhdpi-v4/ic_search_white_24dp.png (OK)
+ 1250052 res/drawable-xhdpi-v4/ic_share_white_24dp.png (OK)
+ 1251020 res/drawable-xhdpi-v4/ic_star_border_white_24dp.png (OK)
+ 1252340 res/drawable-xhdpi-v4/ic_star_outline.png (OK)
+ 1253704 res/drawable-xhdpi-v4/icon.png (OK)
+ 1260428 res/drawable-xhdpi-v4/job_matches.png (OK)
+ 1292796 res/drawable-xhdpi-v4/job_search.png (OK)
+ 1310168 res/drawable-xhdpi-v4/location.png (OK)
+ 1310640 res/drawable-xhdpi-v4/logo_tagline.png (OK)
+ 1328720 res/drawable-xhdpi-v4/menu_saved_star.png (OK)
+ 1329972 res/drawable-xhdpi-v4/menu_share.png (OK)
+ 1330976 res/drawable-xhdpi-v4/no_jobs_found.png (OK)
+ 1354724 res/drawable-xhdpi-v4/no_resume_image.png (OK)
+ 1369632 res/drawable-xhdpi-v4/quick_apply.png (OK)
+ 1387228 res/drawable-xhdpi-v4/resume_icon.png (OK)
+ 1392836 res/drawable-xhdpi-v4/resume_value_prop.png (OK)
+ 1408068 res/drawable-xhdpi-v4/saved_star.png (OK)
+ 1408972 res/drawable-xhdpi-v4/search.png (OK)
+ 1410096 res/drawable-xhdpi-v4/share.png (OK)
+ 1410868 res/drawable-xhdpi-v4/upload.png (OK)
+ 1434644 res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png (OK)
+ 1435036 res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png (OK)
+ 1435492 res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png (OK)
+ 1436304 res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png (OK)
+ 1437640 res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png (OK)
+ 1439200 res/drawable-xxhdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png (OK)
+ 1441556 res/drawable-xxhdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png (OK)
+ 1442680 res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png (OK)
+ 1446528 res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png (OK)
+ 1449424 res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png (OK)
+ 1449756 res/drawable-xxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+ 1450312 res/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png (OK)
+ 1450800 res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png (OK)
+ 1451196 res/drawable-xxhdpi-v4/abc_ic_go_search_api_mtrl_alpha.png (OK)
+ 1451460 res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+ 1451892 res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png (OK)
+ 1452920 res/drawable-xxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png (OK)
+ 1453292 res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png (OK)
+ 1453892 res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png (OK)
+ 1454300 res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png (OK)
+ 1455676 res/drawable-xxhdpi-v4/abc_ic_search_api_mtrl_alpha.png (OK)
+ 1456788 res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png (OK)
+ 1457760 res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png (OK)
+ 1459548 res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png (OK)
+ 1460216 res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png (OK)
+ 1461408 res/drawable-xxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png (OK)
+ 1462424 res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png (OK)
+ 1462676 res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png (OK)
+ 1463008 res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png (OK)
+ 1463316 res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png (OK)
+ 1463624 res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png (OK)
+ 1463940 res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png (OK)
+ 1464344 res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png (OK)
+ 1464740 res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png (OK)
+ 1466608 res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png (OK)
+ 1469476 res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png (OK)
+ 1469972 res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png (OK)
+ 1470660 res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png (OK)
+ 1471560 res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png (OK)
+ 1471868 res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png (OK)
+ 1472164 res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png (OK)
+ 1472848 res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png (OK)
+ 1473996 res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png (OK)
+ 1474300 res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png (OK)
+ 1474596 res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png (OK)
+ 1474900 res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png (OK)
+ 1475192 res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png (OK)
+ 1475460 res/drawable-xxhdpi-v4/cb_all_accounts.png (OK)
+ 1865848 res/drawable-xxhdpi-v4/close.png (OK)
+ 1866172 res/drawable-xxhdpi-v4/cloud_resume.png (OK)
+ 1889416 res/drawable-xxhdpi-v4/common_full_open_on_phone.png (OK)
+ 1890000 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png (OK)
+ 1892284 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png (OK)
+ 1896156 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png (OK)
+ 1899688 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png (OK)
+ 1903176 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png (OK)
+ 1904948 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_focused.9.png (OK)
+ 1909124 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal.9.png (OK)
+ 1912476 res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png (OK)
+ 1915792 res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png (OK)
+ 1918328 res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_focused.9.png (OK)
+ 1922416 res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png (OK)
+ 1926212 res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png (OK)
+ 1929968 res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_disabled.9.png (OK)
+ 1931936 res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_focused.9.png (OK)
+ 1936372 res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal.9.png (OK)
+ 1939952 res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_pressed.9.png (OK)
+ 1943552 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png (OK)
+ 1945576 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png (OK)
+ 1948756 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png (OK)
+ 1951648 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png (OK)
+ 1954564 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png (OK)
+ 1956196 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png (OK)
+ 1959792 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png (OK)
+ 1962612 res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png (OK)
+ 1965448 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png (OK)
+ 1967684 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png (OK)
+ 1971124 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_normal.9.png (OK)
+ 1974260 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png (OK)
+ 1977444 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png (OK)
+ 1979248 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_focused.9.png (OK)
+ 1983148 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_normal.9.png (OK)
+ 1986184 res/drawable-xxhdpi-v4/common_plus_signin_btn_text_light_pressed.9.png (OK)
+ 1989272 res/drawable-xxhdpi-v4/complete.png (OK)
+ 2025380 res/drawable-xxhdpi-v4/delete.png (OK)
+ 2025712 res/drawable-xxhdpi-v4/dropdown_arrow.png (OK)
+ 2025944 res/drawable-xxhdpi-v4/empty_my_jobs.png (OK)
+ 2088008 res/drawable-xxhdpi-v4/eye.png (OK)
+ 2088636 res/drawable-xxhdpi-v4/fab_add.png (OK)
+ 2088844 res/drawable-xxhdpi-v4/file_document.png (OK)
+ 2089468 res/drawable-xxhdpi-v4/ic_arrow_back_white_24dp.png (OK)
+ 2089804 res/drawable-xxhdpi-v4/ic_map_blue_24_dp.png (OK)
+ 2091848 res/drawable-xxhdpi-v4/ic_map_white_24dp.png (OK)
+ 2092892 res/drawable-xxhdpi-v4/ic_my_location_black_24dp.png (OK)
+ 2094448 res/drawable-xxhdpi-v4/ic_my_location_white_24dp.png (OK)
+ 2096000 res/drawable-xxhdpi-v4/ic_near_me_black_24dp.png (OK)
+ 2097188 res/drawable-xxhdpi-v4/ic_near_me_white_24dp.png (OK)
+ 2098376 res/drawable-xxhdpi-v4/ic_search_white_24dp.png (OK)
+ 2099484 res/drawable-xxhdpi-v4/ic_share_white_24dp.png (OK)
+ 2100720 res/drawable-xxhdpi-v4/ic_star_border_white_24dp.png (OK)
+ 2102488 res/drawable-xxhdpi-v4/ic_star_outline.png (OK)
+ 2104344 res/drawable-xxhdpi-v4/icon.png (OK)
+ 2116364 res/drawable-xxhdpi-v4/job_matches.png (OK)
+ 2162600 res/drawable-xxhdpi-v4/job_search.png (OK)
+ 2189252 res/drawable-xxhdpi-v4/location.png (OK)
+ 2189896 res/drawable-xxhdpi-v4/logo_tagline.png (OK)
+ 2218492 res/drawable-xxhdpi-v4/menu_saved_star.png (OK)
+ 2220240 res/drawable-xxhdpi-v4/menu_share.png (OK)
+ 2221440 res/drawable-xxhdpi-v4/no_jobs_found.png (OK)
+ 2275560 res/drawable-xxhdpi-v4/no_resume_image.png (OK)
+ 2292300 res/drawable-xxhdpi-v4/quick_apply.png (OK)
+ 2317960 res/drawable-xxhdpi-v4/resume_icon.png (OK)
+ 2327076 res/drawable-xxhdpi-v4/resume_value_prop.png (OK)
+ 2354680 res/drawable-xxhdpi-v4/saved_star.png (OK)
+ 2355960 res/drawable-xxhdpi-v4/search.png (OK)
+ 2357680 res/drawable-xxhdpi-v4/share.png (OK)
+ 2358904 res/drawable-xxhdpi-v4/upload.png (OK)
+ 2397488 res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png (OK)
+ 2397868 res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png (OK)
+ 2398504 res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png (OK)
+ 2399604 res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png (OK)
+ 2400920 res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png (OK)
+ 2404536 res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png (OK)
+ 2408476 res/drawable-xxxhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png (OK)
+ 2408796 res/drawable-xxxhdpi-v4/abc_ic_clear_mtrl_alpha.png (OK)
+ 2409452 res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png (OK)
+ 2409936 res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png (OK)
+ 2411200 res/drawable-xxxhdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png (OK)
+ 2411644 res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png (OK)
+ 2412400 res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png (OK)
+ 2412876 res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png (OK)
+ 2414520 res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png (OK)
+ 2415928 res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png (OK)
+ 2417140 res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png (OK)
+ 2419316 res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png (OK)
+ 2420132 res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png (OK)
+ 2421552 res/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png (OK)
+ 2422920 res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png (OK)
+ 2423684 res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png (OK)
+ 2424728 res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png (OK)
+ 2425328 res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png (OK)
+ 2426444 res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png (OK)
+ 2426728 res/drawable-xxxhdpi-v4/cb_all_accounts.png (OK)
+ 3014956 res/drawable-xxxhdpi-v4/close.png (OK)
+ 3015308 res/drawable-xxxhdpi-v4/complete.png (OK)
+ 3064544 res/drawable-xxxhdpi-v4/delete.png (OK)
+ 3064916 res/drawable-xxxhdpi-v4/dropdown_arrow.png (OK)
+ 3065168 res/drawable-xxxhdpi-v4/empty_my_jobs.png (OK)
+ 3166964 res/drawable-xxxhdpi-v4/eye.png (OK)
+ 3167752 res/drawable-xxxhdpi-v4/fab_all.png (OK)
+ 3167964 res/drawable-xxxhdpi-v4/fab_applied.png (OK)
+ 3168368 res/drawable-xxxhdpi-v4/fab_expired.png (OK)
+ 3169104 res/drawable-xxxhdpi-v4/fab_star.png (OK)
+ 3170756 res/drawable-xxxhdpi-v4/file_document.png (OK)
+ 3171488 res/drawable-xxxhdpi-v4/filter.png (OK)
+ 3172764 res/drawable-xxxhdpi-v4/ic_arrow_back_white_24dp.png (OK)
+ 3173060 res/drawable-xxxhdpi-v4/ic_map_blue_24_dp.png (OK)
+ 3175928 res/drawable-xxxhdpi-v4/ic_map_white_24dp.png (OK)
+ 3177220 res/drawable-xxxhdpi-v4/ic_my_location_black_24dp.png (OK)
+ 3179172 res/drawable-xxxhdpi-v4/ic_my_location_white_24dp.png (OK)
+ 3181120 res/drawable-xxxhdpi-v4/ic_near_me_black_24dp.png (OK)
+ 3182616 res/drawable-xxxhdpi-v4/ic_near_me_white_24dp.png (OK)
+ 3184108 res/drawable-xxxhdpi-v4/ic_search_white_24dp.png (OK)
+ 3185512 res/drawable-xxxhdpi-v4/ic_share_white_24dp.png (OK)
+ 3187080 res/drawable-xxxhdpi-v4/ic_sort_white_24dp.png (OK)
+ 3187308 res/drawable-xxxhdpi-v4/ic_star_border_white_24dp.png (OK)
+ 3189484 res/drawable-xxxhdpi-v4/ic_star_outline.png (OK)
+ 3191864 res/drawable-xxxhdpi-v4/icon.png (OK)
+ 3209732 res/drawable-xxxhdpi-v4/job_matches.png (OK)
+ 3272120 res/drawable-xxxhdpi-v4/location.png (OK)
+ 3272936 res/drawable-xxxhdpi-v4/logo_tagline.png (OK)
+ 3312264 res/drawable-xxxhdpi-v4/menu_saved_star.png (OK)
+ 3314396 res/drawable-xxxhdpi-v4/menu_share.png (OK)
+ 3316056 res/drawable-xxxhdpi-v4/no_jobs_found.png (OK)
+ 3391700 res/drawable-xxxhdpi-v4/no_resume_image.png (OK)
+ 3416956 res/drawable-xxxhdpi-v4/quick_apply.png (OK)
+ 3453676 res/drawable-xxxhdpi-v4/resume_icon.png (OK)
+ 3467972 res/drawable-xxxhdpi-v4/resume_value_prop.png (OK)
+ 3510064 res/drawable-xxxhdpi-v4/saved_star.png (OK)
+ 3511556 res/drawable-xxxhdpi-v4/search.png (OK)
+ 3514288 res/drawable-xxxhdpi-v4/share.png (OK)
+ 3515596 res/drawable-xxxhdpi-v4/unsaved_star.png (OK)
+ 3517732 res/drawable-xxxhdpi-v4/upload.png (OK)
+ 3571385 res/drawable/abc_btn_borderless_material.xml (OK - compressed)
+ 3571748 res/drawable/abc_btn_check_material.xml (OK - compressed)
+ 3572084 res/drawable/abc_btn_colored_material.xml (OK - compressed)
+ 3572377 res/drawable/abc_btn_default_mtrl_shape.xml (OK - compressed)
+ 3572887 res/drawable/abc_btn_radio_material.xml (OK - compressed)
+ 3573229 res/drawable/abc_cab_background_internal_bg.xml (OK - compressed)
+ 3573520 res/drawable/abc_cab_background_top_material.xml (OK - compressed)
+ 3573811 res/drawable/abc_dialog_material_background_dark.xml (OK - compressed)
+ 3574247 res/drawable/abc_dialog_material_background_light.xml (OK - compressed)
+ 3574669 res/drawable/abc_edit_text_material.xml (OK - compressed)
+ 3575159 res/drawable/abc_item_background_holo_dark.xml (OK - compressed)
+ 3575591 res/drawable/abc_item_background_holo_light.xml (OK - compressed)
+ 3576043 res/drawable/abc_list_selector_background_transition_holo_dark.xml (OK - compressed)
+ 3576373 res/drawable/abc_list_selector_background_transition_holo_light.xml (OK - compressed)
+ 3576680 res/drawable/abc_list_selector_holo_dark.xml (OK - compressed)
+ 3577131 res/drawable/abc_list_selector_holo_light.xml (OK - compressed)
+ 3577581 res/drawable/abc_ratingbar_full_material.xml (OK - compressed)
+ 3577931 res/drawable/abc_ratingbar_indicator_material.xml (OK - compressed)
+ 3578317 res/drawable/abc_ratingbar_small_material.xml (OK - compressed)
+ 3578701 res/drawable/abc_seekbar_thumb_material.xml (OK - compressed)
+ 3579170 res/drawable/abc_seekbar_track_material.xml (OK - compressed)
+ 3579717 res/drawable/abc_spinner_textfield_background_material.xml (OK - compressed)
+ 3580241 res/drawable/abc_switch_thumb_material.xml (OK - compressed)
+ 3580579 res/drawable/abc_tab_indicator_material.xml (OK - compressed)
+ 3580917 res/drawable/abc_text_cursor_material.xml (OK - compressed)
+ 3581265 res/drawable/abc_textfield_search_material.xml (OK - compressed)
+ 3581671 res/drawable/about_button_background_selected.xml (OK - compressed)
+ 3582011 res/drawable/about_button_background_unselected.xml (OK - compressed)
+ 3582329 res/drawable/aboutusbutton.xml (OK - compressed)
+ 3582640 res/drawable/account.xml (OK - compressed)
+ 3583008 res/drawable/circle.xml (OK - compressed)
+ 3583357 res/drawable/common_google_signin_btn_icon_dark.xml (OK - compressed)
+ 3583758 res/drawable/common_google_signin_btn_icon_light.xml (OK - compressed)
+ 3584158 res/drawable/common_google_signin_btn_text_dark.xml (OK - compressed)
+ 3584556 res/drawable/common_google_signin_btn_text_light.xml (OK - compressed)
+ 3584952 res/drawable/common_plus_signin_btn_icon_dark.xml (OK - compressed)
+ 3585349 res/drawable/common_plus_signin_btn_icon_light.xml (OK - compressed)
+ 3585743 res/drawable/common_plus_signin_btn_text_dark.xml (OK - compressed)
+ 3586139 res/drawable/common_plus_signin_btn_text_light.xml (OK - compressed)
+ 3586511 res/drawable/delete.xml (OK - compressed)
+ 3586894 res/drawable/design_fab_background.xml (OK - compressed)
+ 3587179 res/drawable/design_snackbar_background.xml (OK - compressed)
+ 3587488 res/drawable/email.xml (OK - compressed)
+ 3587869 res/drawable/fab_label_background.xml (OK - compressed)
+ 3588277 res/drawable/filter_button_background.xml (OK - compressed)
+ 3588628 res/drawable/filter_close.xml (OK - compressed)
+ 3589088 res/drawable/filter_dropdown_arrow.xml (OK - compressed)
+ 3589525 res/drawable/filter_radio_regular.xml (OK - compressed)
+ 3589852 res/drawable/filter_radio_selected.xml (OK - compressed)
+ 3590171 res/drawable/gradient_background.xml (OK - compressed)
+ 3590560 res/drawable/green_success_check_mark.xml (OK - compressed)
+ 3591276 res/drawable/hockeyapp_btn_background.xml (OK - compressed)
+ 3591606 res/drawable/home.xml (OK - compressed)
+ 3591983 res/drawable/indicator_selected.xml (OK - compressed)
+ 3592301 res/drawable/indicator_unselected.xml (OK - compressed)
+ 3592610 res/drawable/information.xml (OK - compressed)
+ 3592990 res/drawable/information_outline.xml (OK - compressed)
+ 3593481 res/drawable/logout.xml (OK - compressed)
+ 3593850 res/drawable/map_point.xml (OK - compressed)
+ 3594219 res/drawable/menu.xml (OK - compressed)
+ 3594603 res/drawable/my_jobs_divider.xml (OK - compressed)
+ 3594926 res/drawable/plus_image.xml (OK - compressed)
+ 3595305 res/drawable/rounded_textview.xml (OK - compressed)
+ 3595579 res/drawable/settings.xml (OK - compressed)
+ 3595949 res/drawable/share_black.xml (OK - compressed)
+ 3596330 res/drawable/snapshot_background.xml (OK - compressed)
+ 3596693 res/drawable/splash.xml (OK - compressed)
+ 3597152 res/drawable/valueprop_background.xml (OK - compressed)
+ 3597489 res/layout-land/hockeyapp_activity_update.xml (OK - compressed)
+ 3598380 res/layout-sw600dp-v13/design_layout_snackbar.xml (OK - compressed)
+ 3598782 res/layout-v17/abc_alert_dialog_button_bar_material.xml (OK - compressed)
+ 3599542 res/layout-v17/abc_alert_dialog_material.xml (OK - compressed)
+ 3600729 res/layout-v17/abc_dialog_title_material.xml (OK - compressed)
+ 3601375 res/layout-v17/abc_search_view.xml (OK - compressed)
+ 3602692 res/layout-v17/design_layout_snackbar_include.xml (OK - compressed)
+ 3603387 res/layout-v17/notification_template_big_media.xml (OK - compressed)
+ 3604202 res/layout-v17/notification_template_big_media_narrow.xml (OK - compressed)
+ 3605021 res/layout-v17/notification_template_lines.xml (OK - compressed)
+ 3605972 res/layout-v17/notification_template_media.xml (OK - compressed)
+ 3606657 res/layout-v17/notification_template_part_chronometer.xml (OK - compressed)
+ 3607102 res/layout-v17/notification_template_part_time.xml (OK - compressed)
+ 3607550 res/layout-v17/select_dialog_multichoice_material.xml (OK - compressed)
+ 3608103 res/layout-v17/select_dialog_singlechoice_material.xml (OK - compressed)
+ 3608639 res/layout-v21/abc_screen_toolbar.xml (OK - compressed)
+ 3609432 res/layout/abc_action_bar_title_item.xml (OK - compressed)
+ 3609972 res/layout/abc_action_bar_up_container.xml (OK - compressed)
+ 3610325 res/layout/abc_action_bar_view_list_nav_layout.xml (OK - compressed)
+ 3610649 res/layout/abc_action_menu_item_layout.xml (OK - compressed)
+ 3611162 res/layout/abc_action_menu_layout.xml (OK - compressed)
+ 3611552 res/layout/abc_action_mode_bar.xml (OK - compressed)
+ 3611941 res/layout/abc_action_mode_close_item_material.xml (OK - compressed)
+ 3612372 res/layout/abc_activity_chooser_view.xml (OK - compressed)
+ 3613085 res/layout/abc_activity_chooser_view_list_item.xml (OK - compressed)
+ 3613731 res/layout/abc_alert_dialog_button_bar_material.xml (OK - compressed)
+ 3614464 res/layout/abc_alert_dialog_material.xml (OK - compressed)
+ 3615622 res/layout/abc_dialog_title_material.xml (OK - compressed)
+ 3616249 res/layout/abc_expanded_menu_layout.xml (OK - compressed)
+ 3616576 res/layout/abc_list_menu_item_checkbox.xml (OK - compressed)
+ 3616953 res/layout/abc_list_menu_item_icon.xml (OK - compressed)
+ 3617399 res/layout/abc_list_menu_item_layout.xml (OK - compressed)
+ 3618088 res/layout/abc_list_menu_item_radio.xml (OK - compressed)
+ 3618468 res/layout/abc_popup_menu_item_layout.xml (OK - compressed)
+ 3619226 res/layout/abc_screen_content_include.xml (OK - compressed)
+ 3619602 res/layout/abc_screen_simple.xml (OK - compressed)
+ 3620126 res/layout/abc_screen_simple_overlay_action_mode.xml (OK - compressed)
+ 3620611 res/layout/abc_screen_toolbar.xml (OK - compressed)
+ 3621378 res/layout/abc_search_dropdown_item_icons_2line.xml (OK - compressed)
+ 3622240 res/layout/abc_search_view.xml (OK - compressed)
+ 3623525 res/layout/abc_select_dialog_material.xml (OK - compressed)
+ 3624024 res/layout/aboutusactivity.xml (OK - compressed)
+ 3624817 res/layout/advancedsearch.xml (OK - compressed)
+ 3625898 res/layout/apply.xml (OK - compressed)
+ 3626638 res/layout/apply_eeo.xml (OK - compressed)
+ 3627109 res/layout/apply_screeners.xml (OK - compressed)
+ 3627596 res/layout/design_bottom_sheet_dialog.xml (OK - compressed)
+ 3628151 res/layout/design_layout_snackbar.xml (OK - compressed)
+ 3628544 res/layout/design_layout_snackbar_include.xml (OK - compressed)
+ 3629180 res/layout/design_layout_tab_icon.xml (OK - compressed)
+ 3629475 res/layout/design_layout_tab_text.xml (OK - compressed)
+ 3629816 res/layout/design_menu_item_action_area.xml (OK - compressed)
+ 3630096 res/layout/design_navigation_item.xml (OK - compressed)
+ 3630499 res/layout/design_navigation_item_header.xml (OK - compressed)
+ 3630847 res/layout/design_navigation_item_separator.xml (OK - compressed)
+ 3631190 res/layout/design_navigation_item_subheader.xml (OK - compressed)
+ 3631595 res/layout/design_navigation_menu.xml (OK - compressed)
+ 3631990 res/layout/design_navigation_menu_item.xml (OK - compressed)
+ 3632506 res/layout/dontshowagaindialog.xml (OK - compressed)
+ 3632872 res/layout/expiredwrapper.xml (OK - compressed)
+ 3633390 res/layout/externalapply.xml (OK - compressed)
+ 3633869 res/layout/filtercategorylayout.xml (OK - compressed)
+ 3634339 res/layout/filtercompanylayout.xml (OK - compressed)
+ 3634754 res/layout/filterdatelayout.xml (OK - compressed)
+ 3635300 res/layout/filterdistancelayout.xml (OK - compressed)
+ 3635848 res/layout/filteremploymentlayout.xml (OK - compressed)
+ 3636255 res/layout/filterlayout.xml (OK - compressed)
+ 3637157 res/layout/filterpaylayout.xml (OK - compressed)
+ 3637560 res/layout/filtersortlayout.xml (OK - compressed)
+ 3638043 res/layout/fragmentalertdialog.xml (OK - compressed)
+ 3638349 res/layout/fragmentcontainer.xml (OK - compressed)
+ 3638813 res/layout/helpactivity.xml (OK - compressed)
+ 3639402 res/layout/hockeyapp_activity_expiry_info.xml (OK - compressed)
+ 3639840 res/layout/hockeyapp_activity_feedback.xml (OK - compressed)
+ 3641044 res/layout/hockeyapp_activity_login.xml (OK - compressed)
+ 3641750 res/layout/hockeyapp_activity_update.xml (OK - compressed)
+ 3642675 res/layout/hockeyapp_fragment_update.xml (OK - compressed)
+ 3643611 res/layout/hockeyapp_view_feedback_message.xml (OK - compressed)
+ 3644294 res/layout/jdp_basicjobinfo.xml (OK - compressed)
+ 3644905 res/layout/jdp_contactinfo.xml (OK - compressed)
+ 3645393 res/layout/jdp_descriptioninfo.xml (OK - compressed)
+ 3645861 res/layout/jdp_requirementsinfo.xml (OK - compressed)
+ 3646327 res/layout/jdp_snapshotinfo.xml (OK - compressed)
+ 3647007 res/layout/jobdisplaypage.xml (OK - compressed)
+ 3647920 res/layout/jobresultitem.xml (OK - compressed)
+ 3648621 res/layout/jobresultspagefragment.xml (OK - compressed)
+ 3649407 res/layout/jobsearchresultfragment.xml (OK - compressed)
+ 3649764 res/layout/jobtitleview.xml (OK - compressed)
+ 3650191 res/layout/locationradiusview.xml (OK - compressed)
+ 3650738 res/layout/login.xml (OK - compressed)
+ 3651058 res/layout/master.xml (OK - compressed)
+ 3651798 res/layout/mycareerbuilder.xml (OK - compressed)
+ 3652209 res/layout/nav_header.xml (OK - compressed)
+ 3652656 res/layout/notification_media_action.xml (OK - compressed)
+ 3653083 res/layout/notification_media_cancel_action.xml (OK - compressed)
+ 3653578 res/layout/notification_template_big_media.xml (OK - compressed)
+ 3654341 res/layout/notification_template_big_media_narrow.xml (OK - compressed)
+ 3655086 res/layout/notification_template_lines.xml (OK - compressed)
+ 3655986 res/layout/notification_template_media.xml (OK - compressed)
+ 3656622 res/layout/notification_template_part_chronometer.xml (OK - compressed)
+ 3657041 res/layout/notification_template_part_time.xml (OK - compressed)
+ 3657464 res/layout/onboardingcareerpreferencefragment.xml (OK - compressed)
+ 3658028 res/layout/onboardingcompletefragment.xml (OK - compressed)
+ 3658484 res/layout/onboardingintrofragment.xml (OK - compressed)
+ 3658931 res/layout/onboardinglocationfragment.xml (OK - compressed)
+ 3659492 res/layout/onboardingmain.xml (OK - compressed)
+ 3659986 res/layout/progresslistitem.xml (OK - compressed)
+ 3660377 res/layout/recentsearchlistitem.xml (OK - compressed)
+ 3660763 res/layout/resume.xml (OK - compressed)
+ 3661082 res/layout/resumeconfirmation.xml (OK - compressed)
+ 3661883 res/layout/resumeconfirmationtitle.xml (OK - compressed)
+ 3662193 res/layout/resumedetail.xml (OK - compressed)
+ 3663291 res/layout/resumehelpfragment.xml (OK - compressed)
+ 3664005 res/layout/resumelistitem.xml (OK - compressed)
+ 3664594 res/layout/resumemanagementdialog.xml (OK - compressed)
+ 3665516 res/layout/resumemanagementfragment.xml (OK - compressed)
+ 3666370 res/layout/resumemanagementfragmentmycb.xml (OK - compressed)
+ 3667201 res/layout/resumeviewitemlayout.xml (OK - compressed)
+ 3667748 res/layout/resumeviewsactivity.xml (OK - compressed)
+ 3668453 res/layout/savedjobitem.xml (OK - compressed)
+ 3668892 res/layout/savedjobsfragment.xml (OK - compressed)
+ 3669662 res/layout/searchfragment.xml (OK - compressed)
+ 3670531 res/layout/select_dialog_item_material.xml (OK - compressed)
+ 3670978 res/layout/select_dialog_multichoice_material.xml (OK - compressed)
+ 3671504 res/layout/select_dialog_singlechoice_material.xml (OK - compressed)
+ 3672011 res/layout/settingsactivity.xml (OK - compressed)
+ 3672601 res/layout/snapshotview.xml (OK - compressed)
+ 3673001 res/layout/spinnerdropdownitem.xml (OK - compressed)
+ 3673440 res/layout/support_simple_spinner_dropdown_item.xml (OK - compressed)
+ 3673832 res/layout/termsandconditionsactivity.xml (OK - compressed)
+ 3674329 res/layout/validatedmultiplechoicefragment.xml (OK - compressed)
+ 3674816 res/layout/validatedtextboxfragment.xml (OK - compressed)
+ 3675254 res/layout/valuepropactivity.xml (OK - compressed)
+ 3675818 res/layout/valuepropfragment.xml (OK - compressed)
+ 3676292 res/menu/afterapplymenu.xml (OK - compressed)
+ 3676633 res/menu/drawer_view.xml (OK - compressed)
+ 3677071 res/menu/jdp_menu.xml (OK - compressed)
+ 3677442 res/menu/mastermenu.xml (OK - compressed)
+ 3677791 res/menu/resumeactionsmenu.xml (OK - compressed)
+ 3678205 res/menu/resumeconfirmationmenu.xml (OK - compressed)
+ 3678574 res/menu/searchmenu.xml (OK - compressed)
+ 3678924 res/raw/gtm_analytics (OK - compressed)
+ 3680212 resources.arsc (OK)
+ 4395740 NOTICE (OK - compressed)
+ 4395918 classes.dex (OK - compressed)
+ 6221068 assemblies/CareerBuilder_Search.Droid.dll (OK)
+ 6572892 assemblies/CareerBuilder_Search.Droid.dll.config (OK)
+ 6573388 assemblies/CareerBuilder_Search.Droid.dll.mdb (OK)
+ 6666856 assemblies/AppsFlyerXamarinBindingAndroid.dll (OK)
+ 6833824 assemblies/HockeySDK.dll (OK)
+ 7562456 assemblies/Akavache.dll (OK)
+ 7642392 assemblies/Akavache.Sqlite3.dll (OK)
+ 7762268 assemblies/Akavache.Sqlite3.dll.mdb (OK)
+ 7801908 assemblies/Splat.dll (OK)
+ 7847020 assemblies/Splat.dll.mdb (OK)
+ 7859252 assemblies/Microsoft.Practices.ServiceLocation.dll (OK)
+ 7877448 assemblies/Microsoft.Practices.ServiceLocation.dll.mdb (OK)
+ 7879468 assemblies/Microsoft.Practices.Unity.dll (OK)
+ 8015216 assemblies/Plugin.CurrentActivity.dll (OK)
+ 8021424 assemblies/Plugin.Permissions.dll (OK)
+ 8037364 assemblies/Plugin.Permissions.dll.mdb (OK)
+ 8039672 assemblies/Plugin.Permissions.Abstractions.dll (OK)
+ 8045384 assemblies/Plugin.Permissions.Abstractions.dll.mdb (OK)
+ 8045560 assemblies/Plugin.Geolocator.dll (OK)
+ 8068668 assemblies/Plugin.Geolocator.dll.mdb (OK)
+ 8073136 assemblies/Plugin.Geolocator.Abstractions.dll (OK)
+ 8082432 assemblies/Plugin.Geolocator.Abstractions.dll.mdb (OK)
+ 8083828 assemblies/Plugin.DeviceInfo.dll (OK)
+ 8091064 assemblies/Plugin.DeviceInfo.dll.mdb (OK)
+ 8092024 assemblies/Plugin.DeviceInfo.Abstractions.dll (OK)
+ 8097224 assemblies/Plugin.DeviceInfo.Abstractions.dll.mdb (OK)
+ 8097420 assemblies/Xamarin.GooglePlayServices.Analytics.dll (OK)
+ 8271576 assemblies/Xamarin.GooglePlayServices.Base.dll (OK)
+ 8382760 assemblies/Xamarin.GooglePlayServices.Basement.dll (OK)
+ 8631656 assemblies/Xamarin.Insights.dll (OK)
+ 8729512 assemblies/Plugin.ExternalMaps.dll (OK)
+ 8738284 assemblies/Plugin.ExternalMaps.dll.mdb (OK)
+ 8739348 assemblies/Plugin.ExternalMaps.Abstractions.dll (OK)
+ 8744552 assemblies/Plugin.ExternalMaps.Abstractions.dll.mdb (OK)
+ 8744740 assemblies/FloatingActionButton-Xamarin.dll (OK)
+ 8892780 assemblies/Xamarin.Android.Support.v4.dll (OK)
+10829760 assemblies/Xamarin.Android.Support.v7.RecyclerView.dll (OK)
+11398676 assemblies/Xamarin.Android.Support.Vector.Drawable.dll (OK)
+11468916 assemblies/Xamarin.Android.Support.Animated.Vector.Drawable.dll (OK)
+11509448 assemblies/Xamarin.Android.Support.v7.AppCompat.dll (OK)
+12415764 assemblies/Xamarin.Android.Support.Design.dll (OK)
+12781924 assemblies/Xamarin.Android.Support.v7.CardView.dll (OK)
+12816288 assemblies/Newtonsoft.Json.dll (OK)
+13284828 assemblies/libphonenumber.dll (OK)
+14997536 assemblies/System.Reactive.Core.dll (OK)
+15119664 assemblies/System.Reactive.Interfaces.dll (OK)
+15143996 assemblies/System.Reactive.Linq.dll (OK)
+15853396 assemblies/System.Reactive.PlatformServices.dll (OK)
+15888484 assemblies/Plugin.Connectivity.dll (OK)
+15903400 assemblies/Plugin.Connectivity.dll.mdb (OK)
+15905932 assemblies/Plugin.Connectivity.Abstractions.dll (OK)
+15913184 assemblies/Plugin.Connectivity.Abstractions.dll.mdb (OK)
+15913896 assemblies/FlexboxLayoutXamarinBindingAndroid.dll (OK)
+16015332 assemblies/SQLitePCL.raw.dll (OK)
+16071208 assemblies/CareerBuilder_Search.dll (OK)
+16269424 assemblies/CareerBuilder_Search.dll.config (OK)
+16269916 assemblies/CareerBuilder_Search.dll.mdb (OK)
+16346176 assemblies/Mono.Android.Export.dll (OK)
+16425092 assemblies/Mono.Android.Export.dll.mdb (OK)
+16463980 assemblies/System.dll (OK)
+18692772 assemblies/System.dll.mdb (OK)
+19576924 assemblies/System.Net.Http.dll (OK)
+19701404 assemblies/System.Net.Http.dll.mdb (OK)
+19750100 assemblies/System.Xml.dll (OK)
+22316304 assemblies/System.Xml.dll.mdb (OK)
+23268844 assemblies/System.Core.dll (OK)
+24210984 assemblies/System.Core.dll.mdb (OK)
+24591364 assemblies/Mono.Android.dll (OK)
+46847044 assemblies/Mono.Android.dll.mdb (OK)
+54457916 assemblies/Java.Interop.dll (OK)
+54575740 assemblies/Java.Interop.dll.mdb (OK)
+54621504 assemblies/System.Runtime.dll (OK)
+54634872 assemblies/mscorlib.dll (OK)
+58359732 assemblies/mscorlib.dll.mdb (OK)
+59779716 assemblies/System.Threading.dll (OK)
+59785416 assemblies/System.Threading.Tasks.dll (OK)
+59791120 assemblies/System.Runtime.Extensions.dll (OK)
+59796304 assemblies/System.Collections.dll (OK)
+59801492 assemblies/System.Linq.Expressions.dll (OK)
+59808212 assemblies/System.Reflection.dll (OK)
+59813916 assemblies/System.Diagnostics.Debug.dll (OK)
+59818580 assemblies/System.Linq.dll (OK)
+59822752 assemblies/System.Reflection.Extensions.dll (OK)
+59827416 assemblies/System.IO.dll (OK)
+59832104 assemblies/System.Resources.ResourceManager.dll (OK)
+59836780 assemblies/System.Globalization.dll (OK)
+59841972 assemblies/System.Diagnostics.Tools.dll (OK)
+59846648 assemblies/System.Xml.XDocument.dll (OK)
+59851828 assemblies/System.Xml.Linq.dll (OK)
+59985524 assemblies/System.Xml.Linq.dll.mdb (OK)
+60035552 assemblies/System.Runtime.Serialization.dll (OK)
+60923952 assemblies/System.Runtime.Serialization.dll.mdb (OK)
+61247396 assemblies/System.ServiceModel.Internals.dll (OK)
+61475316 assemblies/System.ServiceModel.Internals.dll.mdb (OK)
+61564772 assemblies/System.Runtime.Serialization.Primitives.dll (OK)
+61570492 assemblies/System.Runtime.Serialization.Primitives.dll.mdb (OK)
+61571228 assemblies/System.Dynamic.Runtime.dll (OK)
+61576924 assemblies/System.ObjectModel.dll (OK)
+61582120 assemblies/System.Text.RegularExpressions.dll (OK)
+61586796 assemblies/System.Xml.ReaderWriter.dll (OK)
+61591984 assemblies/System.Text.Encoding.dll (OK)
+61597180 assemblies/System.Text.Encoding.Extensions.dll (OK)
+61601852 assemblies/Microsoft.CSharp.dll (OK)
+61632640 assemblies/Microsoft.CSharp.dll.mdb (OK)
+61642812 assemblies/Mono.CSharp.dll (OK)
+63001720 assemblies/Mono.CSharp.dll.mdb (OK)
+63441052 assemblies/System.ComponentModel.dll (OK)
+63445752 assemblies/System.Runtime.InteropServices.WindowsRuntime.dll (OK)
+63450436 assemblies/System.Collections.Concurrent.dll (OK)
+63455632 assemblies/System.Runtime.InteropServices.dll (OK)
+63463392 assemblies/System.ComponentModel.Composition.dll (OK)
+63734324 assemblies/System.ComponentModel.Composition.dll.mdb (OK)
+63871160 assemblies/System.Xml.XmlSerializer.dll (OK)
+63876348 assemblies/System.Net.Primitives.dll (OK)
+63882021 environment (OK - compressed)
+63882247 lib/armeabi/libmonodroid.so (OK - compressed)
+63940053 lib/armeabi/libmonosgen-2.0.so (OK - compressed)
+65439415 lib/armeabi/libmono-profiler-log.so (OK - compressed)
+65718675 lib/x86/libmonodroid.so (OK - compressed)
+65779083 lib/x86/libmonosgen-2.0.so (OK - compressed)
+67130641 lib/x86/libmono-profiler-log.so (OK - compressed)
+67388312 typemap.jm (OK)
+68982928 typemap.mj (OK)
+70813796 lib/armeabi/libgdbserver.so (OK - compressed)
+71150300 lib/x86/libgdbserver.so (OK - compressed)
+Verification succesful
+
+17-03-2017 02:58:40.531 +01:00 - 2665 - Finished with exit code 0 in 1590 ms.
+/Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk/platform-tools/adb:402: warning: already initialized constant ARGV
+package:com.google.android.youtube
+package:com.android.providers.telephony
+package:com.android.sdm.plugins.connmo
+package:com.google.android.googlequicksearchbox
+package:com.android.providers.calendar
+package:com.android.providers.media
+package:com.google.android.uiccwatchdog
+package:com.google.android.apps.docs.editors.docs
+package:com.google.android.onetimeinitializer
+package:com.android.wallpapercropper
+package:com.motorola.triggerenroll
+package:com.google.android.launcher.layouts.shamu
+package:org.simalliance.openmobileapi.service
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.google.android.apps.enterprise.dmagent
+package:com.android.htmlviewer
+package:com.android.mms.service
+package:com.google.android.apps.docs.editors.sheets
+package:com.google.android.apps.docs.editors.slides
+package:com.android.providers.downloads
+package:com.google.android.apps.messaging
+package:com.android.browser.provider
+package:com.motorola.entitlement
+package:android.autoinstalls.config.google.nexus
+package:com.google.android.apps.genie.geniewidget
+package:com.android.moto.appdirectedsms
+package:com.google.android.configupdater
+package:com.android.defcontainer
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.certinstaller
+package:com.google.android.marvin.talkback
+package:android
+package:com.android.sprint.lifetimedata
+package:com.vzw.apnservice
+package:com.google.android.apps.inputmethod.hindi
+package:com.android.nfc
+package:com.android.stk
+package:com.android.backupconfirm
+package:com.google.android.launcher
+package:com.google.android.deskclock
+package:org.codeaurora.ims
+package:com.google.android.gm
+package:com.motorola.motocit
+package:com.android.sdm.plugins.sprintdm
+package:com.lesspainful
+package:com.google.android.setupwizard
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.google.android.email
+package:com.google.android.music
+package:com.android.printspooler
+package:com.android.sdm.plugins.diagmon
+package:com.android.dreams.basic
+package:com.android.inputdevices
+package:com.google.android.dialer
+package:com.motorola.motosignature.app
+package:com.motorola.android.buacontactadapter
+package:com.google.android.apps.cloudprint
+package:com.android.musicfx
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.google.android.apps.plus
+package:com.motorola.service.ims
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.google.android.contacts
+package:com.google.android.apps.fitness
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.facelock
+package:com.android.keychain
+package:com.google.android.gm.exchange
+package:com.android.chrome
+package:com.qualcomm.qti.rcsbootstraputil
+package:com.google.android.street
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tag
+package:com.google.android.tts
+package:com.verizon.omadm
+package:com.google.android.apps.walletnfcrel
+package:com.xamarin.devicecontrol
+package:com.google.android.partnersetup
+package:com.android.packageinstaller
+package:com.google.android.videos
+package:com.android.proxyhandler
+package:com.google.android.feedback
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.android.managedprovisioning
+package:com.android.sdm.plugins.dcmo
+package:com.android.providers.partnerbookmarks
+package:com.google.android.gsf.login
+package:com.android.wallpaper.livepicker
+package:com.xamarin.setup
+package:com.motorola.triggertrainingservice
+package:com.google.android.inputmethod.korean
+package:com.qualcomm.qti.rcsimsbootstraputil
+package:com.google.android.backuptransport
+package:com.android.settings
+package:com.google.android.inputmethod.pinyin
+package:com.android.sprint.hiddenmenuapp
+package:com.android.calculator2
+package:com.google.android.apps.books
+package:com.android.omadm.service
+package:com.android.vpndialogs
+package:com.google.android.ears
+package:com.google.android.keep
+package:com.google.android.talk
+package:com.android.phone
+package:com.android.shell
+package:com.android.providers.userdictionary
+package:com.google.android.inputmethod.japanese
+package:com.android.location.fused
+package:com.android.systemui
+package:com.google.android.play.games
+package:com.google.android.apps.magazines
+package:com.google.android.apps.gcs
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.google.android.androidforwork
+package:com.qualcomm.atfwd
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:com.google.android.GoogleCamera
+package:com.google.earth
+package:com.verizon.permissions.appdirectedsms
+package:com.google.android.inputmethod.latin
+
+17-03-2017 02:58:40.552 +01:00 - 2686 - Finished with exit code 0 in 19 ms.
+N: android=http://schemas.android.com/apk/res/android
+  E: manifest (line=2)
+    A: android:versionCode(0x0101021b)=(type 0x10)0x753b
+    A: android:versionName(0x0101021c)="3.1.7" (Raw: "3.1.7")
+    A: android:installLocation(0x010102b7)=(type 0x10)0x2
+    A: package="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    A: platformBuildVersionCode=(type 0x10)0x17 (Raw: "23")
+    A: platformBuildVersionName="6.0-2704002" (Raw: "6.0-2704002")
+    E: uses-sdk (line=4)
+      A: android:minSdkVersion(0x0101020c)=(type 0x10)0x10
+    E: uses-permission (line=5)
+      A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+    E: uses-permission (line=6)
+      A: android:name(0x01010003)="android.permission.ACCESS_NETWORK_STATE" (Raw: "android.permission.ACCESS_NETWORK_STATE")
+    E: uses-permission (line=7)
+      A: android:name(0x01010003)="android.permission.WRITE_EXTERNAL_STORAGE" (Raw: "android.permission.WRITE_EXTERNAL_STORAGE")
+    E: uses-permission (line=8)
+      A: android:name(0x01010003)="android.permission.READ_EXTERNAL_STORAGE" (Raw: "android.permission.READ_EXTERNAL_STORAGE")
+    E: uses-permission (line=9)
+      A: android:name(0x01010003)="android.permission.ACCESS_COARSE_LOCATION" (Raw: "android.permission.ACCESS_COARSE_LOCATION")
+    E: uses-permission (line=10)
+      A: android:name(0x01010003)="android.permission.ACCESS_FINE_LOCATION" (Raw: "android.permission.ACCESS_FINE_LOCATION")
+    E: uses-permission (line=11)
+      A: android:name(0x01010003)="android.permission.ACCESS_WIFI_STATE" (Raw: "android.permission.ACCESS_WIFI_STATE")
+    E: uses-permission (line=12)
+      A: android:name(0x01010003)="android.permission.MANAGE_DOCUMENTS" (Raw: "android.permission.MANAGE_DOCUMENTS")
+    E: uses-permission (line=13)
+      A: android:name(0x01010003)="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" (Raw: "android.permission.MOUNT_UNMOUNT_FILESYSTEMS")
+    E: uses-feature (line=14)
+      A: android:name(0x01010003)="android.hardware.location" (Raw: "android.hardware.location")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: uses-feature (line=15)
+      A: android:name(0x01010003)="android.hardware.location.gps" (Raw: "android.hardware.location.gps")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: uses-feature (line=16)
+      A: android:name(0x01010003)="android.hardware.location.network" (Raw: "android.hardware.location.network")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: application (line=17)
+      A: android:theme(0x01010000)=@0x7f0601f3
+      A: android:label(0x01010001)=@0x7f0b0082
+      A: android:icon(0x01010002)=@0x7f0200a2
+      A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.MainApplication" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.MainApplication")
+      A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+      A: android:allowBackup(0x01010280)=(type 0x12)0xffffffff
+      E: receiver (line=18)
+        A: android:name(0x01010003)="com.appsflyer.MultipleInstallBroadcastReceiver" (Raw: "com.appsflyer.MultipleInstallBroadcastReceiver")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        E: intent-filter (line=19)
+          E: action (line=20)
+            A: android:name(0x01010003)="com.android.vending.INSTALL_REFERRER" (Raw: "com.android.vending.INSTALL_REFERRER")
+      E: activity (line=23)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: meta-data (line=24)
+        A: android:name(0x01010003)="net.hockeyapp.android.appIdentifier" (Raw: "net.hockeyapp.android.appIdentifier")
+        A: android:value(0x01010024)="1dc8cf0ddfb2d9821adeb7470f0e0468" (Raw: "1dc8cf0ddfb2d9821adeb7470f0e0468")
+      E: meta-data (line=25)
+        A: android:name(0x01010003)="com.google.android.gms.version" (Raw: "com.google.android.gms.version")
+        A: android:value(0x01010024)=@0x7f090007
+      E: activity (line=26)
+        A: android:label(0x01010001)="Apply" (Raw: "Apply")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ApplyActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ApplyActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=27)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ExpiredJobActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ExpiredJobActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=28)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ExternalApplyActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ExternalApplyActivity")
+      E: activity (line=29)
+        A: android:label(0x01010001)="Job Details" (Raw: "Job Details")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.JobDisplayPageActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.JobDisplayPageActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=30)
+        A: android:theme(0x01010000)=@0x7f0601f7
+        A: android:icon(0x01010002)=@0x7f0200a2
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity")
+        E: intent-filter (line=31)
+          E: action (line=32)
+            A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+          E: category (line=33)
+            A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+      E: activity (line=36)
+        A: android:label(0x01010001)="Similar Jobs" (Raw: "Similar Jobs")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.RecommendationsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.RecommendationsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=37)
+        A: android:theme(0x01010000)=@0x7f06020c
+        A: android:label(0x01010001)="ValuePropActivity" (Raw: "ValuePropActivity")
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.ValuePropActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.ValuePropActivity")
+      E: activity (line=38)
+        A: android:label(0x01010001)="Login" (Raw: "Login")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.LoginActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.LoginActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=39)
+        A: android:theme(0x01010000)=@0x7f0601f5
+        A: android:label(0x01010001)="OnboardingActivity" (Raw: "OnboardingActivity")
+        A: android:name(0x01010003)="md537fd6201b6818e2e180d2f7606e21a83.OnboardingActivity" (Raw: "md537fd6201b6818e2e180d2f7606e21a83.OnboardingActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+        A: android:windowSoftInputMode(0x0101022b)=(type 0x11)0x20
+      E: activity (line=40)
+        A: android:label(0x01010001)="My CareerBuilder" (Raw: "My CareerBuilder")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.MasterNavActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.MasterNavActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=41)
+        A: android:label(0x01010001)="Settings" (Raw: "Settings")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.SettingsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.SettingsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=42)
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.AboutUsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.AboutUsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=43)
+        A: android:theme(0x01010000)=@0x7f06020c
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.TermsAndConditionsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.TermsAndConditionsActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: receiver (line=44)
+        A: android:name(0x01010003)="md5d8b6997ad22c9e0e4a03cc42d04527c5.RefreshOAuthBroadcastReceiver" (Raw: "md5d8b6997ad22c9e0e4a03cc42d04527c5.RefreshOAuthBroadcastReceiver")
+        A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+      E: activity (line=45)
+        A: android:label(0x01010001)="Resume Details" (Raw: "Resume Details")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ResumeDetailActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ResumeDetailActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=46)
+        A: android:label(0x01010001)="Help" (Raw: "Help")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.HelpActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.HelpActivity")
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+      E: activity (line=47)
+        A: android:label(0x01010001)="Resume Views" (Raw: "Resume Views")
+        A: android:name(0x01010003)="md5a4824aa66c0dc4d104077b72c1916a44.ResumeViewsActivity" (Raw: "md5a4824aa66c0dc4d104077b72c1916a44.ResumeViewsActivity")
+      E: receiver (line=48)
+        A: android:label(0x01010001)="Connectivity Plugin Broadcast Receiver" (Raw: "Connectivity Plugin Broadcast Receiver")
+        A: android:name(0x01010003)="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" (Raw: "md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver")
+        A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+      E: provider (line=49)
+        A: android:name(0x01010003)="mono.MonoRuntimeProvider" (Raw: "mono.MonoRuntimeProvider")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:authorities(0x01010018)="com.careerbuilder.SugarDrone.mono.MonoRuntimeProvider.__mono_init__" (Raw: "com.careerbuilder.SugarDrone.mono.MonoRuntimeProvider.__mono_init__")
+        A: android:initOrder(0x0101001a)=(type 0x10)0x7fffffff
+      E: receiver (line=51)
+        A: android:name(0x01010003)="mono.android.Seppuku" (Raw: "mono.android.Seppuku")
+        E: intent-filter (line=52)
+          E: action (line=53)
+            A: android:name(0x01010003)="mono.android.intent.action.SEPPUKU" (Raw: "mono.android.intent.action.SEPPUKU")
+          E: category (line=54)
+            A: android:name(0x01010003)="mono.android.intent.category.SEPPUKU.com.careerbuilder.SugarDrone" (Raw: "mono.android.intent.category.SEPPUKU.com.careerbuilder.SugarDrone")
+      E: activity (line=57)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: activity (line=58)
+        A: android:name(0x01010003)="net.hockeyapp.android.FeedbackActivity" (Raw: "net.hockeyapp.android.FeedbackActivity")
+      E: activity (line=59)
+        A: android:name(0x01010003)="net.hockeyapp.android.PaintActivity" (Raw: "net.hockeyapp.android.PaintActivity")
+      E: activity (line=60)
+        A: android:name(0x01010003)="net.hockeyapp.android.LoginActivity" (Raw: "net.hockeyapp.android.LoginActivity")
+      E: activity (line=61)
+        A: android:name(0x01010003)="net.hockeyapp.android.ExpiryInfoActivity" (Raw: "net.hockeyapp.android.ExpiryInfoActivity")
+      E: activity (line=62)
+        A: android:name(0x01010003)="net.hockeyapp.android.UpdateActivity" (Raw: "net.hockeyapp.android.UpdateActivity")
+      E: activity (line=63)
+        A: android:name(0x01010003)="net.hockeyapp.android.FeedbackActivity" (Raw: "net.hockeyapp.android.FeedbackActivity")
+      E: activity (line=64)
+        A: android:name(0x01010003)="net.hockeyapp.android.PaintActivity" (Raw: "net.hockeyapp.android.PaintActivity")
+      E: activity (line=65)
+        A: android:name(0x01010003)="net.hockeyapp.android.LoginActivity" (Raw: "net.hockeyapp.android.LoginActivity")
+      E: activity (line=66)
+        A: android:name(0x01010003)="net.hockeyapp.android.ExpiryInfoActivity" (Raw: "net.hockeyapp.android.ExpiryInfoActivity")
+
+17-03-2017 02:58:40.562 +01:00 - 2696 - Potential Android SDK location: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk - Valid SDK. [ Source: ANDROID_HOME ]
+17-03-2017 02:58:40.563 +01:00 - 2696 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-mac_x86 - Does not exist. [ Source: Xamarin < 3 install path ]
+17-03-2017 02:58:40.563 +01:00 - 2697 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-macosx - Does not exist. [ Source: Xamarin 3 install path ]
+17-03-2017 02:58:40.563 +01:00 - 2697 - Potential Android SDK location: /usr/local/Cellar/android-sdk/ - Does not exist. [ Source: Homebrew install path ]
+17-03-2017 02:58:40.563 +01:00 - 2697 - Using Android SDK: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk
+17-03-2017 02:58:40.564 +01:00 - 2697 - Using JDK: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home [ Source: JAVA_HOME ]
+17-03-2017 02:58:40.570 +01:00 - 2704 - Potential Android SDK location: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk - Valid SDK. [ Source: ANDROID_HOME ]
+17-03-2017 02:58:40.570 +01:00 - 2704 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-mac_x86 - Does not exist. [ Source: Xamarin < 3 install path ]
+17-03-2017 02:58:40.571 +01:00 - 2704 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-macosx - Does not exist. [ Source: Xamarin 3 install path ]
+17-03-2017 02:58:40.571 +01:00 - 2705 - Potential Android SDK location: /usr/local/Cellar/android-sdk/ - Does not exist. [ Source: Homebrew install path ]
+17-03-2017 02:58:40.571 +01:00 - 2705 - Using Android SDK: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk
+17-03-2017 02:58:40.571 +01:00 - 2705 - Using JDK: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home [ Source: JAVA_HOME ]
+17-03-2017 02:59:31.489 +01:00 - 53621 - Finished with exit code 0 in 50914 ms.
+Success
+
+17-03-2017 02:59:33.215 +01:00 - 55347 - Finished with exit code 0 in 1725 ms.
+/Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk/platform-tools/adb:402: warning: already initialized constant ARGV
+package:com.google.android.youtube
+package:com.android.providers.telephony
+package:com.android.sdm.plugins.connmo
+package:com.google.android.googlequicksearchbox
+package:com.android.providers.calendar
+package:com.android.providers.media
+package:com.google.android.uiccwatchdog
+package:com.google.android.apps.docs.editors.docs
+package:com.careerbuilder.SugarDrone
+package:com.google.android.onetimeinitializer
+package:com.android.wallpapercropper
+package:com.motorola.triggerenroll
+package:com.google.android.launcher.layouts.shamu
+package:org.simalliance.openmobileapi.service
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.google.android.apps.enterprise.dmagent
+package:com.android.htmlviewer
+package:com.android.mms.service
+package:com.google.android.apps.docs.editors.sheets
+package:com.google.android.apps.docs.editors.slides
+package:com.android.providers.downloads
+package:com.google.android.apps.messaging
+package:com.android.browser.provider
+package:com.motorola.entitlement
+package:android.autoinstalls.config.google.nexus
+package:com.google.android.apps.genie.geniewidget
+package:com.android.moto.appdirectedsms
+package:com.google.android.configupdater
+package:com.android.defcontainer
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.certinstaller
+package:com.google.android.marvin.talkback
+package:android
+package:com.android.sprint.lifetimedata
+package:com.vzw.apnservice
+package:com.google.android.apps.inputmethod.hindi
+package:com.android.nfc
+package:com.android.stk
+package:com.android.backupconfirm
+package:com.google.android.launcher
+package:com.google.android.deskclock
+package:org.codeaurora.ims
+package:com.google.android.gm
+package:com.motorola.motocit
+package:com.android.sdm.plugins.sprintdm
+package:com.lesspainful
+package:com.google.android.setupwizard
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.google.android.email
+package:com.google.android.music
+package:com.android.printspooler
+package:com.android.sdm.plugins.diagmon
+package:com.android.dreams.basic
+package:com.android.inputdevices
+package:com.google.android.dialer
+package:com.motorola.motosignature.app
+package:com.motorola.android.buacontactadapter
+package:com.google.android.apps.cloudprint
+package:com.android.musicfx
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.google.android.apps.plus
+package:com.motorola.service.ims
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.google.android.contacts
+package:com.google.android.apps.fitness
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.facelock
+package:com.android.keychain
+package:com.google.android.gm.exchange
+package:com.android.chrome
+package:com.qualcomm.qti.rcsbootstraputil
+package:com.google.android.street
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tag
+package:com.google.android.tts
+package:com.verizon.omadm
+package:com.google.android.apps.walletnfcrel
+package:com.xamarin.devicecontrol
+package:com.google.android.partnersetup
+package:com.android.packageinstaller
+package:com.google.android.videos
+package:com.android.proxyhandler
+package:com.google.android.feedback
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.android.managedprovisioning
+package:com.android.sdm.plugins.dcmo
+package:com.android.providers.partnerbookmarks
+package:com.google.android.gsf.login
+package:com.android.wallpaper.livepicker
+package:com.xamarin.setup
+package:com.motorola.triggertrainingservice
+package:com.google.android.inputmethod.korean
+package:com.qualcomm.qti.rcsimsbootstraputil
+package:com.google.android.backuptransport
+package:com.android.settings
+package:com.google.android.inputmethod.pinyin
+package:com.android.sprint.hiddenmenuapp
+package:com.android.calculator2
+package:com.google.android.apps.books
+package:com.android.omadm.service
+package:com.android.vpndialogs
+package:com.google.android.ears
+package:com.google.android.keep
+package:com.google.android.talk
+package:com.android.phone
+package:com.android.shell
+package:com.android.providers.userdictionary
+package:com.google.android.inputmethod.japanese
+package:com.android.location.fused
+package:com.android.systemui
+package:com.google.android.play.games
+package:com.google.android.apps.magazines
+package:com.google.android.apps.gcs
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.google.android.androidforwork
+package:com.qualcomm.atfwd
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:com.google.android.GoogleCamera
+package:com.google.earth
+package:com.verizon.permissions.appdirectedsms
+package:com.google.android.inputmethod.latin
+
+17-03-2017 02:59:33.216 +01:00 - 55348 - Installed com.careerbuilder.SugarDrone.
+17-03-2017 02:59:33.224 +01:00 - 55356 - Potential Android SDK location: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk - Valid SDK. [ Source: ANDROID_HOME ]
+17-03-2017 02:59:33.224 +01:00 - 55356 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-mac_x86 - Does not exist. [ Source: Xamarin < 3 install path ]
+17-03-2017 02:59:33.225 +01:00 - 55356 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-macosx - Does not exist. [ Source: Xamarin 3 install path ]
+17-03-2017 02:59:33.225 +01:00 - 55357 - Potential Android SDK location: /usr/local/Cellar/android-sdk/ - Does not exist. [ Source: Homebrew install path ]
+17-03-2017 02:59:33.225 +01:00 - 55357 - Using Android SDK: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk
+17-03-2017 02:59:33.226 +01:00 - 55357 - Using JDK: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home [ Source: JAVA_HOME ]
+17-03-2017 02:59:33.233 +01:00 - 55365 - Potential Android SDK location: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk - Valid SDK. [ Source: ANDROID_HOME ]
+17-03-2017 02:59:33.233 +01:00 - 55365 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-mac_x86 - Does not exist. [ Source: Xamarin < 3 install path ]
+17-03-2017 02:59:33.234 +01:00 - 55366 - Potential Android SDK location: /Users/xamarin/Library/Developer/Xamarin/android-sdk-macosx - Does not exist. [ Source: Xamarin 3 install path ]
+17-03-2017 02:59:33.234 +01:00 - 55366 - Potential Android SDK location: /usr/local/Cellar/android-sdk/ - Does not exist. [ Source: Homebrew install path ]
+17-03-2017 02:59:33.234 +01:00 - 55366 - Using Android SDK: /Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk
+17-03-2017 02:59:33.235 +01:00 - 55366 - Using JDK: /Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home [ Source: JAVA_HOME ]
+17-03-2017 02:59:42.981 +01:00 - 65112 - Finished with exit code 0 in 9745 ms.
+Success
+
+17-03-2017 02:59:44.833 +01:00 - 66964 - Finished with exit code 0 in 1851 ms.
+/Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk/platform-tools/adb:402: warning: already initialized constant ARGV
+package:com.google.android.youtube
+package:com.android.providers.telephony
+package:com.android.sdm.plugins.connmo
+package:com.google.android.googlequicksearchbox
+package:com.android.providers.calendar
+package:com.android.providers.media
+package:com.google.android.uiccwatchdog
+package:com.google.android.apps.docs.editors.docs
+package:com.careerbuilder.SugarDrone
+package:com.google.android.onetimeinitializer
+package:com.android.wallpapercropper
+package:com.motorola.triggerenroll
+package:com.google.android.launcher.layouts.shamu
+package:org.simalliance.openmobileapi.service
+package:com.careerbuilder.SugarDrone.test
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.google.android.apps.enterprise.dmagent
+package:com.android.htmlviewer
+package:com.android.mms.service
+package:com.google.android.apps.docs.editors.sheets
+package:com.google.android.apps.docs.editors.slides
+package:com.android.providers.downloads
+package:com.google.android.apps.messaging
+package:com.android.browser.provider
+package:com.motorola.entitlement
+package:android.autoinstalls.config.google.nexus
+package:com.google.android.apps.genie.geniewidget
+package:com.android.moto.appdirectedsms
+package:com.google.android.configupdater
+package:com.android.defcontainer
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.certinstaller
+package:com.google.android.marvin.talkback
+package:android
+package:com.android.sprint.lifetimedata
+package:com.vzw.apnservice
+package:com.google.android.apps.inputmethod.hindi
+package:com.android.nfc
+package:com.android.stk
+package:com.android.backupconfirm
+package:com.google.android.launcher
+package:com.google.android.deskclock
+package:org.codeaurora.ims
+package:com.google.android.gm
+package:com.motorola.motocit
+package:com.android.sdm.plugins.sprintdm
+package:com.lesspainful
+package:com.google.android.setupwizard
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.google.android.email
+package:com.google.android.music
+package:com.android.printspooler
+package:com.android.sdm.plugins.diagmon
+package:com.android.dreams.basic
+package:com.android.inputdevices
+package:com.google.android.dialer
+package:com.motorola.motosignature.app
+package:com.motorola.android.buacontactadapter
+package:com.google.android.apps.cloudprint
+package:com.android.musicfx
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.google.android.apps.plus
+package:com.motorola.service.ims
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.google.android.contacts
+package:com.google.android.apps.fitness
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.facelock
+package:com.android.keychain
+package:com.google.android.gm.exchange
+package:com.android.chrome
+package:com.qualcomm.qti.rcsbootstraputil
+package:com.google.android.street
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tag
+package:com.google.android.tts
+package:com.verizon.omadm
+package:com.google.android.apps.walletnfcrel
+package:com.xamarin.devicecontrol
+package:com.google.android.partnersetup
+package:com.android.packageinstaller
+package:com.google.android.videos
+package:com.android.proxyhandler
+package:com.google.android.feedback
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.android.managedprovisioning
+package:com.android.sdm.plugins.dcmo
+package:com.android.providers.partnerbookmarks
+package:com.google.android.gsf.login
+package:com.android.wallpaper.livepicker
+package:com.xamarin.setup
+package:com.motorola.triggertrainingservice
+package:com.google.android.inputmethod.korean
+package:com.qualcomm.qti.rcsimsbootstraputil
+package:com.google.android.backuptransport
+package:com.android.settings
+package:com.google.android.inputmethod.pinyin
+package:com.android.sprint.hiddenmenuapp
+package:com.android.calculator2
+package:com.google.android.apps.books
+package:com.android.omadm.service
+package:com.android.vpndialogs
+package:com.google.android.ears
+package:com.google.android.keep
+package:com.google.android.talk
+package:com.android.phone
+package:com.android.shell
+package:com.android.providers.userdictionary
+package:com.google.android.inputmethod.japanese
+package:com.android.location.fused
+package:com.android.systemui
+package:com.google.android.play.games
+package:com.google.android.apps.magazines
+package:com.google.android.apps.gcs
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.google.android.androidforwork
+package:com.qualcomm.atfwd
+package:com.android.providers.contacts
+package:com.android.captiveportallogin
+package:com.google.android.GoogleCamera
+package:com.google.earth
+package:com.verizon.permissions.appdirectedsms
+package:com.google.android.inputmethod.latin
+
+17-03-2017 02:59:44.853 +01:00 - 66984 - Finished with exit code 0 in 18 ms.
+N: android=http://schemas.android.com/apk/res/android
+  E: manifest (line=2)
+    A: android:versionCode(0x0101021b)=(type 0x10)0x3
+    A: android:versionName(0x0101021c)="0.3.0" (Raw: "0.3.0")
+    A: package="com.careerbuilder.SugarDrone.test" (Raw: "com.careerbuilder.SugarDrone.test")
+    A: platformBuildVersionCode=(type 0x10)0x19 (Raw: "25")
+    A: platformBuildVersionName="7.1.1" (Raw: "7.1.1")
+    E: application (line=6)
+      A: android:label(0x01010001)="instrumentation_backend" (Raw: "instrumentation_backend")
+      E: uses-library (line=7)
+        A: android:name(0x01010003)="android.test.runner" (Raw: "android.test.runner")
+      E: uses-library (line=8)
+        A: android:name(0x01010003)="com.google.android.maps" (Raw: "com.google.android.maps")
+        A: android:required(0x0101028e)=(type 0x12)0x0
+      E: activity (line=9)
+        A: android:label(0x01010001)="WakeUp" (Raw: "WakeUp")
+        A: android:name(0x01010003)="sh.calaba.instrumentationbackend.WakeUp" (Raw: "sh.calaba.instrumentationbackend.WakeUp")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:finishOnTaskLaunch(0x01010014)=(type 0x12)0xffffffff
+        A: android:stateNotNeeded(0x01010016)=(type 0x12)0xffffffff
+        A: android:excludeFromRecents(0x01010017)=(type 0x12)0xffffffff
+        A: android:launchMode(0x0101001d)=(type 0x10)0x3
+        A: android:noHistory(0x0101022d)=(type 0x12)0x0
+      E: activity (line=18)
+        A: android:label(0x01010001)="StatusReporterActivity" (Raw: "StatusReporterActivity")
+        A: android:name(0x01010003)="sh.calaba.instrumentationbackend.StatusReporterActivity" (Raw: "sh.calaba.instrumentationbackend.StatusReporterActivity")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:finishOnTaskLaunch(0x01010014)=(type 0x12)0xffffffff
+        A: android:stateNotNeeded(0x01010016)=(type 0x12)0xffffffff
+        A: android:excludeFromRecents(0x01010017)=(type 0x12)0xffffffff
+        A: android:noHistory(0x0101022d)=(type 0x12)0xffffffff
+      E: activity (line=26)
+        A: android:label(0x01010001)="ResumeTaskActivity" (Raw: "ResumeTaskActivity")
+        A: android:name(0x01010003)="sh.calaba.instrumentationbackend.ResumeTaskActivity" (Raw: "sh.calaba.instrumentationbackend.ResumeTaskActivity")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:finishOnTaskLaunch(0x01010014)=(type 0x12)0xffffffff
+        A: android:stateNotNeeded(0x01010016)=(type 0x12)0xffffffff
+        A: android:excludeFromRecents(0x01010017)=(type 0x12)0xffffffff
+        A: android:noHistory(0x0101022d)=(type 0x12)0xffffffff
+    E: uses-sdk (line=35)
+      A: android:minSdkVersion(0x0101020c)=(type 0x10)0x4
+    E: instrumentation (line=36)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner" (Raw: "sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: instrumentation (line=37)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.ClearAppData" (Raw: "sh.calaba.instrumentationbackend.ClearAppData")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: instrumentation (line=38)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.ClearAppData2" (Raw: "sh.calaba.instrumentationbackend.ClearAppData2")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: instrumentation (line=39)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.ClearPreferences" (Raw: "sh.calaba.instrumentationbackend.ClearPreferences")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: instrumentation (line=40)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.SetPreferences" (Raw: "sh.calaba.instrumentationbackend.SetPreferences")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: instrumentation (line=41)
+      A: android:name(0x01010003)="sh.calaba.instrumentationbackend.GetPreferences" (Raw: "sh.calaba.instrumentationbackend.GetPreferences")
+      A: android:targetPackage(0x01010021)="com.careerbuilder.SugarDrone" (Raw: "com.careerbuilder.SugarDrone")
+    E: uses-permission (line=43)
+      A: android:name(0x01010003)="android.permission.WRITE_EXTERNAL_STORAGE" (Raw: "android.permission.WRITE_EXTERNAL_STORAGE")
+    E: uses-permission (line=44)
+      A: android:name(0x01010003)="android.permission.ACCESS_MOCK_LOCATION" (Raw: "android.permission.ACCESS_MOCK_LOCATION")
+    E: uses-permission (line=45)
+      A: android:name(0x01010003)="android.permission.ACCESS_COARSE_LOCATION" (Raw: "android.permission.ACCESS_COARSE_LOCATION")
+    E: uses-permission (line=46)
+      A: android:name(0x01010003)="android.permission.ACCESS_FINE_LOCATION" (Raw: "android.permission.ACCESS_FINE_LOCATION")
+    E: uses-permission (line=47)
+      A: android:name(0x01010003)="android.permission.INTERNET" (Raw: "android.permission.INTERNET")
+    E: uses-permission (line=48)
+      A: android:name(0x01010003)="android.permission.GET_TASKS" (Raw: "android.permission.GET_TASKS")
+    E: uses-permission (line=49)
+      A: android:name(0x01010003)="android.permission.REORDER_TASKS" (Raw: "android.permission.REORDER_TASKS")
+
+17-03-2017 02:59:44.855 +01:00 - 66986 - Installed com.careerbuilder.SugarDrone.test.
+17-03-2017 02:59:44.855 +01:00 - 66987 - Launchable activity: System.String[]
+17-03-2017 02:59:45.375 +01:00 - 67506 - Finished with exit code 0 in 518 ms.
+/Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk/platform-tools/adb:402: warning: already initialized constant ARGV
+
+
+17-03-2017 02:59:45.376 +01:00 - 67507 - Woke device up.
+17-03-2017 02:59:52.317 +01:00 - 74448 - Finished with exit code 0 in 6939 ms.
+/Volumes/Data/xamarin/pipeline/versions/7a749066b956fc9068b22cd5a5d9d1927eb372b0/adt/sdk/platform-tools/adb:402: warning: already initialized constant ARGV
+Parse am instrument -e target_package com.careerbuilder.SugarDrone -e main_activity md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity -e debug false -e test_server_port 37777 -e class sh.calaba.instrumentationbackend.InstrumentationBackend com.careerbuilder.SugarDrone.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner
+{:instrumentation=>"com.careerbuilder.SugarDrone.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner", :instrumentation_name=>"sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner", :main_activity=>"md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity", :class=>"sh.calaba.instrumentationbackend.InstrumentationBackend", :target_package=>"com.careerbuilder.SugarDrone", :package_name=>"com.careerbuilder.SugarDrone.test"}
+Parse am instrument -e target_package com.careerbuilder.SugarDrone -e main_activity md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity -e debug false -e test_server_port 37777 -e class sh.calaba.instrumentationbackend.InstrumentationBackend com.careerbuilder.SugarDrone.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner
+{:instrumentation=>"com.careerbuilder.SugarDrone.test/sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner", :instrumentation_name=>"sh.calaba.instrumentationbackend.CalabashInstrumentationTestRunner", :main_activity=>"md537fd6201b6818e2e180d2f7606e21a83.AppMainActivity", :class=>"sh.calaba.instrumentationbackend.InstrumentationBackend", :target_package=>"com.careerbuilder.SugarDrone", :package_name=>"com.careerbuilder.SugarDrone.test"}
+
+17-03-2017 02:59:52.318 +01:00 - 74449 - Started application up.
+17-03-2017 02:59:52.764 +01:00 - 74896 - Finished with exit code 0 in 446 ms.
+
+17-03-2017 02:59:52.765 +01:00 - 74896 - Forwarded port 37777.
+17-03-2017 02:59:52.768 +01:00 - 74899 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ping", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ping", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ping", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ping", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "ping" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ping" } }
+17-03-2017 02:59:52.924 +01:00 - 75055 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:52 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "pong" }
+17-03-2017 02:59:52.926 +01:00 - 75057 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ready", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ready", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ready", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ready", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "ready" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/ready" } }
+17-03-2017 02:59:53.089 +01:00 - 75220 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:53 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "true" }
+17-03-2017 02:59:53.090 +01:00 - 75221 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/start-application", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/start-application", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/start-application", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/start-application", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "start-application" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/start-application" } }
+17-03-2017 02:59:53.890 +01:00 - 76021 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:53 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"outcome":"SUCCESS"}" }
+17-03-2017 02:59:53.905 +01:00 - 76036 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:54.265 +01:00 - 76396 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:54 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"com.android.internal.policy.impl.PhoneWindow$DecorView","tag":null,"description":"com.android.internal.policy.impl.PhoneWindow$DecorView{328bc773 V.E..... R....... 0,0-1440,2392}","id":null,"visible":true,"rect":{"height":2392,"width":1440,"y":0,"x":0,"center_x":720,"center_y":1196},"enabled":true,"contentDescription":null},{"class":"android.widget.LinearLayout","tag":null,"description":"android.widget.LinearLayout{3f26b1eb V.E..... ........ 0,0-1440,2392}","id":null,"visible":true,"rect":{"height":2392,"width":1440,"y":0,"x":0,"center_x":720,"center_y":1196},"enabled":true,"contentDescription":null},{"class":"android.widget.FrameLayout","tag":null,"description":"android.widget.FrameLayout{34718b48 V.E..... ........ 0,88-1440,2392}","id":null,"visible":true,"rect":{"height":2304,"width":1440,"y":88,"x":0,"center_x":720,"center_y":1240},"enabled":true,"contentDescription":null},{"class":"android.support.v7.widget.FitWindowsLinearLayout","tag":null,"description":"android.support.v7.widget.FitWindowsLinearLayout{2e786de1 V.E..... ........ 0,0-1440,2304 #7f0a006d app:id/action_bar_root}","id":"action_bar_root","visible":true,"rect":{"height":2304,"width":1440,"y":88,"x":0,"center_x":720,"center_y":1240},"enabled":true,"contentDescription":null},{"class":"android.support.v7.widget.ContentFrameLayout","tag":null,"description":"android.support.v7.widget.ContentFrameLayout{17c78706 V.E..... ........ 0,0-1440,2304 #1020002 android:id/content}","id":"content","visible":true,"rect":{"height":2304,"width":1440,"y":88,"x":0,"center_x":720,"center_y":1240},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:54.612 +01:00 - 76744 - Waiting for element matching Id("agreeAndContinueButton").
+17-03-2017 02:59:54.614 +01:00 - 76746 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:54.785 +01:00 - 76917 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:54 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:55.046 +01:00 - 77177 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:55.252 +01:00 - 77383 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:55 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:55.513 +01:00 - 77644 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:55.686 +01:00 - 77817 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:55 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:55.937 +01:00 - 78068 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:57.522 +01:00 - 79653 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:57 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:57.783 +01:00 - 79914 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:58.007 +01:00 - 80138 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:58 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:58.008 +01:00 - 80139 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:58.279 +01:00 - 80410 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:58 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:58.445 +01:00 - 80576 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:58.647 +01:00 - 80778 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:58 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:58.647 +01:00 - 80778 - Query for Id("agreeAndContinueButton") gave 1 results.
+17-03-2017 02:59:58.648 +01:00 - 80779 - Waiting for element matching Id("agreeAndContinueButton").
+17-03-2017 02:59:58.648 +01:00 - 80779 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:59.018 +01:00 - 81149 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:59 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:59.019 +01:00 - 81150 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:59.202 +01:00 - 81333 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:59 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:59.366 +01:00 - 81497 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:59.564 +01:00 - 81695 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:59 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:59.565 +01:00 - 81696 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 02:59:59.775 +01:00 - 81906 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 01:59:59 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatButton","tag":null,"description":"android.support.v7.widget.AppCompatButton{22844be9 VFED..C. ........ 35,2101-1405,2269 #7f0a01b3 app:id/agreeAndContinueButton}","id":"agreeAndContinueButton","text":"I AGREE","visible":true,"rect":{"height":168,"width":1370,"y":2189,"x":35,"center_x":720,"center_y":2273},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 02:59:59.936 +01:00 - 82067 - Using element matching Id("agreeAndContinueButton").
+17-03-2017 02:59:59.937 +01:00 - 82068 - Tapping coordinates [ 720, 2273 ].
+17-03-2017 02:59:59.939 +01:00 - 82070 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/" } }
+17-03-2017 03:00:00.817 +01:00 - 82947 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:00 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"bonusInformation":[],"message":"","success":true}" }
+17-03-2017 03:00:00.818 +01:00 - 82949 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "backdoor" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor" } }
+17-03-2017 03:00:01.637 +01:00 - 83768 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:01 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"result":"<VOID>","outcome":"SUCCESS"}" }
+17-03-2017 03:00:01.638 +01:00 - 83769 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "backdoor" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/backdoor" } }
+17-03-2017 03:00:01.843 +01:00 - 83974 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:01 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"result":"<VOID>","outcome":"SUCCESS"}" }
+17-03-2017 03:00:01.844 +01:00 - 83975 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:05.017 +01:00 - 87148 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:05 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:05.017 +01:00 - 87148 - Query for Marked("Skip") gave 0 results.
+17-03-2017 03:00:05.018 +01:00 - 87149 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:06.472 +01:00 - 88602 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:06 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3e622ad2 V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 1","visible":true,"rect":{"height":66,"width":1199,"y":748,"x":84,"center_x":683,"center_y":781},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:06.472 +01:00 - 88603 - Query for Marked("Job 1") gave 1 results.
+17-03-2017 03:00:06.473 +01:00 - 88603 - Waiting for element matching Marked("Job 1").
+17-03-2017 03:00:06.473 +01:00 - 88604 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:07.572 +01:00 - 89702 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:07 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3e622ad2 V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 1","visible":true,"rect":{"height":66,"width":1199,"y":748,"x":84,"center_x":683,"center_y":781},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:07.573 +01:00 - 89703 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:08.710 +01:00 - 90841 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:08 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3e622ad2 V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 1","visible":true,"rect":{"height":66,"width":1199,"y":748,"x":84,"center_x":683,"center_y":781},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:08.874 +01:00 - 91004 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:09.937 +01:00 - 92068 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:09 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3132c4df V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 2","visible":true,"rect":{"height":66,"width":1199,"y":1365,"x":84,"center_x":683,"center_y":1398},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:09.938 +01:00 - 92068 - Query for Marked("Job 2") gave 1 results.
+17-03-2017 03:00:09.938 +01:00 - 92069 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:10.922 +01:00 - 93053 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:10 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3132c4df V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 2","visible":true,"rect":{"height":66,"width":1199,"y":1365,"x":84,"center_x":683,"center_y":1398},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:10.923 +01:00 - 93054 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:12.001 +01:00 - 94132 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:12 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[{"class":"android.support.v7.widget.AppCompatTextView","tag":null,"description":"android.support.v7.widget.AppCompatTextView{3132c4df V.ED.... ........ 0,68-1199,134 #7f0a0109 app:id/jobTitle}","id":"jobTitle","text":"Job 2","visible":true,"rect":{"height":66,"width":1199,"y":1365,"x":84,"center_x":683,"center_y":1398},"enabled":true,"contentDescription":null}],"outcome":"SUCCESS"}" }
+17-03-2017 03:00:12.152 +01:00 - 94282 - Using element matching Marked("Job 2").
+17-03-2017 03:00:12.152 +01:00 - 94283 - Tapping coordinates [ 683, 1398 ].
+17-03-2017 03:00:12.153 +01:00 - 94283 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/" } }
+17-03-2017 03:00:12.888 +01:00 - 95019 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:12 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"bonusInformation":[],"message":"","success":true}" }
+17-03-2017 03:00:12.889 +01:00 - 95020 - Waiting for no element matching Marked("mapButton").
+17-03-2017 03:00:12.890 +01:00 - 95020 - HTTP POST { Url: { AbsolutePath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", AbsoluteUri: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Authority: "devicehost46.prod:37777", Fragment: "", Host: "devicehost46.prod", HostNameType: Dns, IsDefaultPort: False, IsFile: False, IsLoopback: False, IsUnc: False, LocalPath: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", PathAndQuery: "/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map", Port: 37777, Query: "", Scheme: "http", Segments: [ "/", "proxy/", "token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/", "map" ], UserEscaped: False, UserInfo: "", DnsSafeHost: "devicehost46.prod", IsAbsoluteUri: True, OriginalString: "http://devicehost46.prod:37777/proxy/token-d7dd991f-6d7b-4b4d-b716-d2a1c27385be/map" } }
+17-03-2017 03:00:14.055 +01:00 - 96185 - POST Complete { StatusCode: OK, StatusDescription: "OK ", ResponseHeaders: "Server: nginx/1.2.7
+Date: Fri, 17 Mar 2017 02:00:14 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+", Contents: "{"results":[],"outcome":"SUCCESS"}" }
+Took final screenshot. { Title: "After test", FileName: "/Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/screenshot-final-7a8c03c6f7a14d46800e6245436d1f71.png", ElapsedMilliseconds: 6097 }
+Completed run. 132 events collected.
+
+[[[  XTC-Output-Path: '/Volumes/Data/xamarin/workspaces/3f9e02ff-4595-4fff-b8a0-6ef61d0e7faf/workspace/tmp/TestRun-20170317-020037-4373' ]]]
+
+
+Tests run: 1, Errors: 0, Failures: 0, Inconclusive: 0, Time: 124.4589042 seconds
+  Not run: 0, Invalid: 0, Ignored: 0, Skipped: 0
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319
